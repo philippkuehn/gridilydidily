@@ -1,0 +1,11 @@
+{
+  "name": "gridilydidily",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-rename": "latest",
+    "gulp-ruby-sass": "latest",
+    "node-sass": "latest"
+  }
+}

@@ -1,0 +1,35 @@
+$grid-breakpoints: (
+  'small': 'only screen and (min-width: 400px)',
+  'medium': 'only screen and (min-width: 700px)',
+  'large': 'only screen and (min-width: 1200px)'
+) !default;
+
+$grid-modifier-breakpoints: true !default;
+
+$grid-bases: (
+  2,
+  3,
+  4,
+  8,
+  12
+) !default;
+
+$grid-gutter-default:       10px !default;
+$grid-gutters: (
+  'wide': 20px,
+  'narrow': 0px
+) !default;
+$grid-gutter-breakpoints:   true !default;
+$grid-gutter-vertical:      true !default;
+
+$grid-default:              true !default;
+$grid-default-modifier:     'default' !default;
+
+$grid-fallback:             true !default;
+$grid-fallback-markup-fix:  true !default;
+
+$grid-push:                 true !default;
+$grid-push-breakpoints:     true !default;
+
+$grid-pull:                 true !default;
+$grid-pull-breakpoints:     true !default;

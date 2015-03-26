@@ -1,0 +1,171 @@
+@import "../../src/gridilydidily";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #666;
+}
+
+a {
+  color: inherit;
+  transition: .2s opacity;
+  &:hover {
+    opacity: .5;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+button {
+  display: block;
+  //width: 100%;
+  font: inherit;
+  color: inherit;
+  border: none;
+  appearance: none;
+  border-radius: 0;
+  background: #ccc;
+  padding: 1em;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+pre {
+  display: block;
+  background: #333;
+  color: #ccc;
+  font-family: 'Source Code Pro';
+  font-size: 16px;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  padding: 1em;
+  margin-bottom: 2em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  & + & {
+    margin-top: -1.5em;
+  }
+}
+
+.header,
+.footer,
+.main {
+  padding: 2%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+}
+
+.demo {
+  margin-bottom: 5%;
+}
+
+.demo-item {
+  width: 100%;
+  font-size: 16px;
+  background: #ddd;
+  padding: 1em;
+  color: #999;
+}
+
+.demo-grid,
+.demo-description {
+  margin-bottom: 2em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.item {
+  background: #333;
+  color: #ccc;
+  padding: 20px;
+  width: 100%;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: #444;
+  border: none;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

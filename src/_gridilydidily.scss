@@ -1,0 +1,138 @@
+@import "gridilydidily/defaults";
+@import "gridilydidily/functions";
+@import "gridilydidily/modifier";
+@import "gridilydidily/helper-classes";
+
+.grid {
+  // resets
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+
+  // basic
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$grid-gutter-default;
+  @if $grid-gutter-vertical {
+    margin-bottom: -$grid-gutter-default;
+  }
+
+  @if unit($grid-gutter-default) == '%' {
+    width: 100% + $grid-gutter-default;
+  }
+  @else {
+    width: calc(100% + #{$grid-gutter-default});
+  }
+
+  @if $grid-fallback {
+    @if $grid-fallback-markup-fix {
+      .no-flexbox & {
+        letter-spacing: -0.31em;
+      }
+    }
+  }
+
+}
+
+/* Opera hack */
+@if $grid-fallback and $grid-fallback-markup-fix {
+  .opera:-o-prefocus,
+  .no-flexbox .grid {
+    word-spacing: -0.43em;
+  }
+}
+
+.grid-item {
+  // resets
+  box-sizing: border-box;
+  margin: 0;
+
+  // basic
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  //align-items: flex-start;
+  width: 100%;
+  padding-left: $grid-gutter-default;
+  @if $grid-gutter-vertical {
+    padding-bottom: $grid-gutter-default;
+  }
+
+  @if $grid-fallback {
+    .no-flexbox & {
+      display: inline-block;
+      vertical-align: top;
+      letter-spacing: normal;
+      word-spacing: normal;
+    }
+  }
+}
+
+@include grid-gutters($grid-gutters);
+
+// create widths based on breakpoints
+@if $grid-gutter-breakpoints {
+  @each $breakpoint-name, $breakpoint-condition in $grid-breakpoints {
+    @media #{$breakpoint-condition} {
+      @include grid-gutters($grid-gutters, $breakpoint-name);
+    }
+  }
+}
+
+// create default widths
+@if $grid-default {
+  @include grid-values($grid-default-modifier, 'width');
+}
+
+@if $grid-push {
+  @include grid-values('#{$grid-default-modifier}--push', 'left');
+}
+
+@if $grid-pull {
+  @include grid-values('#{$grid-default-modifier}--pull', 'right');
+}
+
+// create widths based on breakpoints
+@each $breakpoint-name, $breakpoint-condition in $grid-breakpoints {
+  @media #{$breakpoint-condition} {
+    @include grid-values($breakpoint-name, 'width');
+
+    @if $grid-push and $grid-push-breakpoints {
+      @include grid-values('#{$breakpoint-name}--push', 'left');
+    }
+
+    @if $grid-pull and $grid-pull-breakpoints {
+      @include grid-values('#{$breakpoint-name}--pull', 'right');
+    }
+  }
+}
+
+@include grid-reverse();
+@include grid-left();
+@include grid-center();
+@include grid-right();
+@include grid-top();
+@include grid-middle();
+@include grid-bottom();
+@include grid-equal();
+@include grid-between();
+@include grid-around();
+
+@if $grid-modifier-breakpoints {
+  @each $breakpoint-name, $breakpoint-condition in $grid-breakpoints {
+    @media #{$breakpoint-condition} {
+      @include grid-reverse($breakpoint-name);
+      @include grid-left($breakpoint-name);
+      @include grid-center($breakpoint-name);
+      @include grid-right($breakpoint-name);
+      @include grid-top($breakpoint-name);
+      @include grid-middle($breakpoint-name);
+      @include grid-bottom($breakpoint-name);
+      @include grid-equal($breakpoint-name);
+      @include grid-between($breakpoint-name);
+      @include grid-around($breakpoint-name);
+    }
+  }
+}
