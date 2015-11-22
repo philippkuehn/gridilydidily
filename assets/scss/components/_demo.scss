@@ -7,4 +7,15 @@
 		border: 1px solid $light-grey;
 	}
 
+	&__fraction {
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility .2s $ease, opacity .2s $ease;
+
+		@include min-width(small) {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
 }

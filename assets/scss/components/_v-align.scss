@@ -1,0 +1,15 @@
+.v-align {
+
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+
+	&__wrapper {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		height: 100%;
+	}
+
+}

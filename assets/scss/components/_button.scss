@@ -1,3 +1,24 @@
 .button {
 
+	display: inline-block;
+	color: inherit;
+	line-height: 1;
+	padding: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	min-width: 10em;
+	border-radius: 2em;
+	border: 1px solid currentColor;
+	transition: border .2s $ease, color .2s $ease, background .2s $ease;
+
+	&--key {
+		color: $key;
+
+		&:hover {
+			color: $dark-blue;
+			background: $key;
+		}
+	}
+
 }
