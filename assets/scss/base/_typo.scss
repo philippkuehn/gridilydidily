@@ -1,0 +1,36 @@
+/// responsive typography
+/// Source: http://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
+
+/*
+Example:
+
+p {
+	@include font-size($p-font-sizes);
+}
+
+*/
+
+body {
+	font-family: $font-family-sans-serif;
+	line-height: $font-line-height;
+	color: $light-grey;
+	background: $dark-blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.1;
+}
+
+a {
+	color: $black;
+	text-decoration: none;
+}
+
+p {
+	@include font-size($p-font-sizes);
+}

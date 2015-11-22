@@ -1,0 +1,25 @@
+/// Function: Pixel to REM
+
+/*
+Example:
+
+.my-element {
+    font-size: rem(14px);
+}
+
+*/
+
+@function rem($values...) {
+	$result: ();
+	$separator: list-separator($values);
+	@each $value in $values {
+		@if type-of($value) == "number" and unit($value) == "px" {
+			$result: append($result, $value / ($rem-baseline / 1rem), $separator);
+		} @else if type-of($value) == "list" {
+			$result: append($result, rem($value...), $separator);
+		} @else {
+			$result: append($result, $value, $separator);
+		}
+	}
+	@return $result;
+}

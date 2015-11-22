@@ -1,0 +1,15 @@
+/// Fluid font size
+/// Source: http://www.philipp-kuehn.com/beitrag/viewportbasierte-schriftgroessen/
+
+@function magic-size($size) {
+	$base: $size / ($size * 0 + 1);
+	$ratio-adjustment: 9; // make this smaller to get a smaller ratio between small and large fonts
+	@return calc(#{$size - pow($base/$ratio-adjustment, 2)} + #{pow($base/($ratio-adjustment*3), 2)}vw);
+}
+
+@mixin fluid-size($size) {
+	$magic-size: magic-size($size);
+	font-size: $size;
+	font-size: $magic-size;
+	content: 'viewport-units-buggyfill; font-size: #{$magic-size}';
+}

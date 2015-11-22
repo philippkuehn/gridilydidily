@@ -1,0 +1,217 @@
+@mixin grid-left($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='left'],
+	.grid[data-grid#{$modifier}*=' left'] {
+		justify-content: flex-start;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				text-align: left;
+				> .grid__item {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-center($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='center'],
+	.grid[data-grid#{$modifier}*=' center'] {
+		justify-content: center;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				text-align: center;
+				> .grid__item {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-right($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='right'],
+	.grid[data-grid#{$modifier}*=' right'] {
+		justify-content: flex-end;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				text-align: right;
+				> .grid__item {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-top($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='top'],
+	.grid[data-grid#{$modifier}*=' top'] {
+		align-items: flex-start;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				> .grid__item {
+					vertical-align: top;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-middle($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='middle'],
+	.grid[data-grid#{$modifier}*=' middle'] {
+		align-items: center;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				> .grid__item {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-bottom($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='bottom'],
+	.grid[data-grid#{$modifier}*='bottom'] {
+		align-items: flex-end;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				> .grid__item {
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-reverse($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='reverse'],
+	.grid[data-grid#{$modifier}*=' reverse'] {
+		flex-direction: row-reverse;
+		flex-wrap: wrap-reverse;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				direction: rtl;
+				> .grid__item {
+					direction: ltr;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-forwards($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='forwards'],
+	.grid[data-grid#{$modifier}*=' forwards'] {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				direction: ltr;
+			}
+		}
+	}
+
+}
+
+@mixin grid-first($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid__item[data-grid#{$modifier}^='first'],
+	.grid__item[data-grid#{$modifier}*=' first'] {
+		order: -1;
+	}
+
+}
+
+@mixin grid-last($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid__item[data-grid#{$modifier}^='last'],
+	.grid__item[data-grid#{$modifier}*=' last'] {
+		order: 1;
+	}
+
+}
+
+@mixin grid-between($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='between'],
+	.grid[data-grid#{$modifier}*=' between'] {
+		justify-content: space-between;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				text-align: center;
+				> .grid__item {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-around($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='around'],
+	.grid[data-grid#{$modifier}*=' around'] {
+		justify-content: space-around;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				text-align: center;
+				> .grid__item {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,23 @@
+// Project configuration
+@import "settings";
+
+// Import helper like functions and mixins
+@import "utilities/index";
+
+// Import vendor styles
+@import "vendor/index";
+
+// Import vendor override styles
+@import "vendor/overrides/index";
+
+// Import base styles
+@import "base/index";
+
+// Import components
+@import "components/index";
+
+// Import layout
+@import "layout/index";
+
+// Import pages styles
+@import "pages/index";

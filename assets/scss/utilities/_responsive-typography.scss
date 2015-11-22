@@ -1,0 +1,35 @@
+/// Responsive font size and line height
+/// Source: http://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
+
+@mixin font-size($fs-map, $fs-breakpoints: $typo-breakpoints) {
+	@each $fs-breakpoint, $fs-font-size in $fs-map {
+		@if $fs-breakpoint == null {
+			@include make-font-size($fs-font-size);
+		}
+		@else {
+			// If $fs-font-size is a key that exists in
+			// $fs-breakpoints, use the value
+			@if map-has-key($fs-breakpoints, $fs-breakpoint) {
+				$fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+			}
+			@media screen and (min-width: $fs-breakpoint) {
+				@include make-font-size($fs-font-size);
+			}
+		}
+	}
+}
+
+// Utility function for mixin font-size
+@mixin make-font-size($fs-font-size) {
+	// If $fs-font-size is a list, include
+	// both font-size and line-height
+	@if type-of($fs-font-size) == "list" {
+		font-size: nth($fs-font-size, 1);
+		@if (length($fs-font-size) > 1) {
+			line-height: nth($fs-font-size, 2);
+		}
+	}
+	@else {
+		font-size: $fs-font-size;
+	}
+}

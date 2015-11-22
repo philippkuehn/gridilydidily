@@ -1,0 +1,141 @@
+// ----------------------------------------------------------------------------
+// Colors
+// ----------------------------------------------------------------------------
+
+$white: #fff;
+$black: #000;
+$light-grey: #B3B8C3;
+$dark-blue: #20242D;
+
+// ----------------------------------------------------------------------------
+// Animations
+// ----------------------------------------------------------------------------
+
+$ease: cubic-bezier(.645, .045, .355, 1);
+$bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+// ----------------------------------------------------------------------------
+// Z-index Layer
+// ----------------------------------------------------------------------------
+
+// A map of z layers
+// Used in: scss/utilities/_z-index.scss
+
+$z-layers: (
+  'modal':            9000,
+  'overlay':          8000,
+  'dropdown':         7000,
+  'navigation':       6000,
+  'footer':           5000,
+  'tooltip':          4000,
+  'header':           1000,
+  'default':             1,
+  'bottomless-pit':  -9000
+);
+
+// ----------------------------------------------------------------------------
+// Breakpoints
+// ----------------------------------------------------------------------------
+
+// A map of media query breakpoints
+// Used in: scss/utilities/_breakpoints.scss
+
+$breakpoints: (
+  'x-small':   350px,
+  'small':     600px,
+  'medium':    800px,
+  'large':     1000px,
+  'x-large':   1400px,
+  'xx-large':  1800px
+);
+
+// ----------------------------------------------------------------------------
+// Layout
+// ----------------------------------------------------------------------------
+
+// Content Container
+$max-width:  1920px;
+
+// Baseline
+$rem-baseline: 16px !default;
+
+// ----------------------------------------------------------------------------
+// Debug
+// ----------------------------------------------------------------------------
+
+%debug {
+  background: rgba(255,0,0, .1);
+}
+
+// ----------------------------------------------------------------------------
+// Typo
+// ----------------------------------------------------------------------------
+
+$font-family-sans-serif: sans-serif;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-line-height: 1.4;
+
+// A map of responsive font sizes and line height
+// Used in: scss/base/_typo.scss
+
+$typo-breakpoints: (
+  'small': 640px,
+  'medium': 800px,
+  'large': 1280px,
+);
+
+$p-font-sizes: (
+  null  : (15px, 1.3),
+  small : 16px,
+  medium: (17px, 1.4),
+  900px : 18px,
+  large : (19px, 1.45),
+  1440px: 20px,
+);
+
+// ----------------------------------------------------------------------------
+// Grid
+// ----------------------------------------------------------------------------
+
+$grid-settings: (
+  breakpoints: (
+    small: 'only screen and (min-width: 400px)',
+    medium: 'only screen and (min-width: 700px)',
+    large: 'only screen and (min-width: 1200px)',
+  ),
+  bases: (
+    8,
+  ),
+  gutters: (
+    none: 0em,
+    narrow: .7em,
+    normal: 1.25em,
+    wide: 2.5em,
+    x-wide: 4em,
+  ),
+  default-gutter: 1.25em,
+  gutter-breakpoints: true,
+  vertical-gutters: true,
+  fallback: true,
+  fallback-markup-fix: true,
+  push: true,
+  push-breakpoints: true,
+  pull: true,
+  pull-breakpoints: true,
+  modifier: (
+    left: true,
+    center: true,
+    right: true,
+    top: true,
+    middle: true,
+    bottom: true,
+    reverse: true,
+    forwards: true,
+    first: true,
+    last: true,
+    between: true,
+    around: true,
+  ),
+  modifier-breakpoints: true,
+);

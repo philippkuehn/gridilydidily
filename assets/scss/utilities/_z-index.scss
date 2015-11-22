@@ -1,0 +1,25 @@
+/// Block for z-index management
+
+/*
+Example:
+
+.my-element {
+	z-index: z('modal');
+}
+
+... and its backdrop
+Computed z-index based on the my-element
+
+.my-element-backdrop {
+	z-index: z('modal') + 1;
+}
+
+*/
+
+@function z($layer) {
+	@if not map-has-key($z-layers, $layer) {
+		@warn "No z-index found in $z-layers map for `#{$layer}`. Property omitted.";
+	}
+
+	@return map-get($z-layers, $layer);
+}

@@ -1,23 +1,23 @@
-var gulp   = require("gulp"),
-    rename = require("gulp-rename"),
-    prefix = require("gulp-autoprefixer"),
-    sass   = require("gulp-ruby-sass");
+'use strict';
 
-gulp.task("sass", function () {
-  return sass(__dirname + "/demo/sass/style.scss", {sourcemap: false})
-    .pipe(prefix({
-        browsers: ["last 2 versions", "Explorer >= 10", "Android >= 4.4"]
-    }))
-    .pipe(rename("style.css"))
-    .pipe(gulp.dest("./demo/css"));
-});
+var gulp = require('gulp'),
+	plugins = require('gulp-load-plugins')({
+		pattern: ['*']
+	}),
+	configPath = './gulp/config.js',
+	config = require(configPath),
+	taskDir = './gulp/tasks/',
+	taskList = require('fs').readdirSync(taskDir);
 
-gulp.task("default", ["watch"]);
+config.onError = function(err) {
+	plugins.notify.onError({
+		title: 'Error',
+		message: '<%= error.message %>',
+		sound: 'Basso',
+	})(err);
+	this.emit('end');
+};
 
-gulp.task("watch", ["sass"], function(){
-
-    gulp.watch([
-      "**/*.scss"
-    ], ["sass"]);
-
+taskList.forEach(function (taskFile) {
+ 	require(taskDir + taskFile)(gulp, config, plugins);
 });
