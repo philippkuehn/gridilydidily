@@ -28,7 +28,6 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	margin: .5em 0;
 	overflow: auto;
 	padding: 1em;
 }
@@ -70,10 +69,6 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 .token.doctype,
 .token.cdata {
 	color: hsl(0, 0%, 47%); /* #777777 */
-}
-
-.token.punctuation {
-	opacity: .7;
 }
 
 .namespace {

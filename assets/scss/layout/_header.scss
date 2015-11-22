@@ -17,4 +17,15 @@
 		}
 	}
 
+	&__buttons {
+		margin-bottom: 1em;
+	}
+
+	&__version {
+		font-weight: 700;
+		letter-spacing: .1em;
+		color: $medium-grey;
+		font-size: .85em;
+	}
+
 }

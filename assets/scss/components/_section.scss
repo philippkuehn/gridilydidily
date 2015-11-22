@@ -1,6 +1,13 @@
 .section {
 
-	padding-bottom: 3em;
+	padding-bottom: 5em;
+
+	&__row {
+		margin-bottom: 3em;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 
 	&__header {
 		text-align: center;
@@ -10,6 +17,10 @@
 			margin-right: auto;
 			max-width: 60%;
 		}
+	}
+
+	&__code {
+		background: rgba(0, 0, 0, .2);
 	}
 
 }

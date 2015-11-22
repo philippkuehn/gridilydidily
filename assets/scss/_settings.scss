@@ -4,6 +4,7 @@
 
 $white: #fff;
 $black: #000;
+$medium-grey: #66737f;
 $light-grey: #B3B8C3;
 $dark-blue: #20242D;
 $key: #B04B57;
@@ -89,6 +90,7 @@ $grid-settings: (
   ),
   bases: (
     8,
+    12,
   ),
   gutters: (
     none: 0em,
