@@ -1,3 +1,7 @@
+---
+layout: test
+title: testtitle
+---
 <!DOCTYPE html>
 <html>
 <head>
