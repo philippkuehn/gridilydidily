@@ -140,6 +140,35 @@
 		</div>
 	</div>
 
+	<div class="section">
+		<div class="inner">
+
+			<header class="section__header">
+				<h3>
+					General usage
+				</h3>
+				<p>
+					This grid system is mobile first. Naming should be self-explanatory. The default classes specify the width if no breakpoint will match. Leave these classes away and the item will take full width.
+				</p>
+			</header>
+
+			```
+
+			hey
+
+			```
+
+			<pre>
+				```
+				<div>
+					div
+				</div>
+				```
+			</pre>
+
+		</div>
+	</div>
+
 </main>
 
 <footer class="footer">

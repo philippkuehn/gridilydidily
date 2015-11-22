@@ -16,7 +16,7 @@ body {
 	line-height: $font-line-height;
 	color: $light-grey;
 	background: $dark-blue;
-	@include fluid-size(17px);
+	@include fluid-size(18px);
 }
 
 h1,
@@ -53,5 +53,5 @@ a {
 }
 
 p {
-	@include font-size($p-font-sizes);
+
 }

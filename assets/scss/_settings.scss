@@ -77,24 +77,6 @@ $font-weight-regular: 400;
 $font-weight-bold: 700;
 $font-line-height: 1.4;
 
-// A map of responsive font sizes and line height
-// Used in: scss/base/_typo.scss
-
-$typo-breakpoints: (
-  'small': 640px,
-  'medium': 800px,
-  'large': 1280px,
-);
-
-$p-font-sizes: (
-  null  : (15px, 1.3),
-  small : 16px,
-  medium: (17px, 1.4),
-  900px : 18px,
-  large : (19px, 1.45),
-  1440px: 20px,
-);
-
 // ----------------------------------------------------------------------------
 // Grid
 // ----------------------------------------------------------------------------
