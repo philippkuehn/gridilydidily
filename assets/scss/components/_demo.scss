@@ -4,6 +4,10 @@
 		padding: .25em .5em;
 		border: 3px solid $light-grey;
 		min-height: 2.2em;
+
+		&--large {
+			min-height: 4.4em;
+		}
 	}
 
 	&__fraction {

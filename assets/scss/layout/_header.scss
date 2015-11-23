@@ -15,6 +15,12 @@
 			margin-right: auto;
 			max-width: 60%;
 		}
+		@include min-width(xx-large) {
+			max-width: 80%;
+		}
+		@include min-width(xxx-large) {
+			max-width: none;
+		}
 	}
 
 	&__buttons {

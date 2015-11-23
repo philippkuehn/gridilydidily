@@ -8,10 +8,13 @@
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	min-width: 10em;
 	border-radius: 2em;
 	border: 3px solid currentColor;
 	transition: border .2s $ease, color .2s $ease, background .2s $ease;
+
+	@include min-width(small) {
+		min-width: 10em;
+	}
 
 	&--split {
 
