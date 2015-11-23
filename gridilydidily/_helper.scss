@@ -1,0 +1,24 @@
+@function map-deep-get($map, $keys...) {
+
+	@each $key in $keys {
+		$map: map-get($map, $key);
+	}
+	@return $map;
+
+}
+
+@function grid-option($keys...) {
+
+	$value: map-deep-get($grid-settings, $keys...);
+	@return $value;
+
+}
+
+@function add-dashes-to-modifier($modifier: '') {
+
+	@if $modifier != '' {
+		$modifier: '--#{$modifier}';
+	}
+	@return $modifier;
+
+}
