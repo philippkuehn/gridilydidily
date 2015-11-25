@@ -1,7 +1,6 @@
 .button {
 
 	display: inline-block;
-	color: inherit;
 	line-height: 1;
 	padding: 1em;
 	font-weight: 700;
@@ -11,6 +10,14 @@
 	border-radius: 2em;
 	border: 3px solid currentColor;
 	transition: border .2s $ease, color .2s $ease, background .2s $ease;
+	color: $key;
+	cursor: pointer;
+
+	&:hover {
+		color: $dark-blue;
+		border: 3px solid $key;
+		background: $key;
+	}
 
 	@include min-width(small) {
 		min-width: 10em;
@@ -30,16 +37,6 @@
 			border-left-width: 2px;
 		}
 
-	}
-
-	&--key {
-		color: $key;
-
-		&:hover {
-			color: $dark-blue;
-			border: 3px solid $key;
-			background: $key;
-		}
 	}
 
 }

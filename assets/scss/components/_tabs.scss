@@ -1,0 +1,36 @@
+.tabs {
+
+	&__list {
+		list-style-type: none;
+		text-align: center;
+	}
+
+	&__item {
+		display: inline-block;
+	}
+
+	&__button {
+		display: inline-block;
+		padding: 1em;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		color: $medium-grey;
+
+		&.is-active {
+			color: $light-grey;
+			background: $very-dark-blue;
+		}
+
+	}
+
+	&__content {
+		display: none;
+
+		&.is-active {
+			display: block;
+		}
+	}
+
+}

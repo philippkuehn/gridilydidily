@@ -147,35 +147,423 @@
 		</div>
 	</div>
 
+
 	<div class="section">
+
 		<div class="section__row">
 			<div class="inner">
+				<header class="section__header">
+					<h2>
+						Grid Modifier
+					</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+					</p>
+					<div class="select__wrapper">
+						<select data-demo-select>
+							<option value="left">left</option>
+							<option value="center" selected>center</option>
+							<option value="right">right</option>
+							<option value="top">top</option>
+							<option value="middle">middle</option>
+							<option value="bottom">bottom</option>
+							<option value="forwards">forwards</option>
+							<option value="reverse">reverse</option>
+							<option value="between">between</option>
+							<option value="around">around</option>
+						</select>
+					</div>
+				</header>
+			</div>
+		</div>
 
+
+
+		<div class="section__row" data-tabs>
+			<header class="section__header">
+				<ul class="tabs__list">
+					<li class="tabs__item">
+						<button class="tabs__button is-active" data-tabs-button="1">
+							Markup
+						</button>
+					</li>
+					<li class="tabs__item">
+						<button class="tabs__button" data-tabs-button="2">
+							Demo
+						</button>
+					</li>
+				</ul>
+			</header>
+
+			<div class="section__code">
+				<div class="inner">
+
+					<div class="tabs__content is-active" data-tabs-content="1">
+
+						<div class="demo__grid-modifier" data-grid-modifier="left">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="left"&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier is-active" data-grid-modifier="center">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="center"&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="right">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="right"&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="top">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="top"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="middle">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="middle"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="bottom">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="bottom"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		…
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="forwards">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="forwards"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		1
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		2
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		3
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="reverse">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="reverse"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		1
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		2
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		3
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="between">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="between"&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="around">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="around"&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+					</div>
+
+
+					<div class="tabs__content" data-tabs-content="2">
+
+						<div class="demo__grid-modifier" data-grid-modifier="left">
+							<div class="grid" data-grid="left">
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier is-active" data-grid-modifier="center">
+							<div class="grid" data-grid="center">
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="right">
+							<div class="grid" data-grid="right">
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="top">
+							<div class="grid" data-grid="top">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item demo__item--large">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="middle">
+							<div class="grid" data-grid="middle">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item demo__item--large">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="bottom">
+							<div class="grid" data-grid="bottom">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item demo__item--large">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="forwards">
+							<div class="grid" data-grid="forwards">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										1
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										2
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										3
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="reverse">
+							<div class="grid" data-grid="reverse">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										1
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										2
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										3
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="between">
+							<div class="grid" data-grid="between">
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="around">
+							<div class="grid" data-grid="around">
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="3/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="section__row">
+			<div class="inner">
 				<header class="section__header">
 					<h3>
-						General usage
+						Multiple modifier
 					</h3>
 					<p>
-						This grid system is mobile first. Naming should be self-explanatory. The default classes specify the width if no breakpoint will match. Leave these classes away and the item will take full width.
+						You can use multiple modifier at the same time! It's dead simple – just seperate them with a space.
 					</p>
 				</header>
-
 			</div>
 		</div>
 
 		<div class="section__row">
 			<div class="section__code">
 				<div class="inner">
-<pre><code class="language-markup">
-&lt;div class="grid" data-grid="center reverse" data-grid--medium="forwards"&gt;
-	&lt;div class="grid__item" data-grid="2/8 push--1/8"&gt;
+<pre><code class="language-markup">&lt;div class="grid" data-grid="center middle reverse"&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
 		…
 	&lt;/div&gt;
-	&lt;div class="grid__item" data-grid="4/8" data-grid--large="2/8"&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
+		…
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="3/12"&gt;
 		…
 	&lt;/div&gt;
 &lt;/div&gt;
-
 </code></pre>
 				</div>
 			</div>
@@ -183,314 +571,10 @@
 
 	</div>
 
-	<div class="section">
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h3>
-						Grid Modifier
-					</h3>
-				</header>
-			</div>
-		</div>
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="left"
-					</h4>
-				</header>
-			</div>
-		</div>
 
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="left">
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="center"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="center">
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="right"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="right">
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="top"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="top">
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item demo__item--large">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="middle"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="middle">
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item demo__item--large">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="bottom"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="bottom">
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item demo__item--large">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="forwards"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="forwards">
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							1
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							2
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							3
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="reverse"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="reverse">
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							1
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							2
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							3
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="between"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="between">
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="around"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid" data-grid="around">
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="3/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<div class="section">
 
