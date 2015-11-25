@@ -38,3 +38,11 @@ button {
 	-moz-osx-font-smoothing: grayscale;
 	background: none;
 }
+
+code:not([class]) {
+	background: $very-dark-blue;
+	padding: .1em .5em .2em .5em;
+	border-radius: 2em;
+	color: $key;
+	font-family: 'Source Code Pro', monospace;
+}
