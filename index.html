@@ -40,7 +40,7 @@
 
 <main class="main">
 
-	<div class="section">
+	<section class="section">
 		<div class="inner">
 
 			<div class="grid">
@@ -145,10 +145,10 @@
 			</div>
 
 		</div>
-	</div>
+	</section>
 
 
-	<div class="section">
+	<section class="section">
 
 		<div class="section__row">
 			<div class="inner">
@@ -157,7 +157,7 @@
 						Grid Modifier
 					</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+						Gridilydididly has a lot of grid modifier. Some of them are flexbox-only but it's only a matter of time before we can drop support for old IE. Until then Gridilydidily has inline-block fallback.
 					</p>
 					<div class="select__wrapper">
 						<select data-demo-select>
@@ -529,156 +529,174 @@
 			</div>
 		</div>
 
-	</div>
+	</section>
 
-
-
-
-
-
-	<div class="section">
+	<section class="section">
 
 		<div class="section__row">
 			<div class="inner">
 				<header class="section__header">
-					<h3>
-						Grid-Item Modifier
-					</h3>
+					<h2>
+						Grid-item Modifier
+					</h2>
 					<p>
-				    first
-				    last
-				    push
-				    pull
+						blub
 					</p>
+					<div class="select__wrapper">
+						<select data-demo-select>
+							<option value="first" selected>first</option>
+							<option value="last">last</option>
+							<option value="push">push</option>
+							<option value="pull">pull</option>
+						</select>
+					</div>
 				</header>
 			</div>
 		</div>
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="first"
-					</h4>
-				</header>
-			</div>
-		</div>
+		<div class="section__row" data-tabs>
+			<header class="section__header">
+				<ul class="tabs__list">
+					<li class="tabs__item">
+						<button class="tabs__button is-active" data-tabs-button="1">
+							Markup
+						</button>
+					</li>
+					<li class="tabs__item">
+						<button class="tabs__button" data-tabs-button="2">
+							Demo
+						</button>
+					</li>
+				</ul>
+			</header>
 
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid">
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							1
+			<div class="section__code">
+				<div class="inner">
+
+					<div class="tabs__content is-active" data-tabs-content="1">
+
+						<div class="demo__grid-modifier is-active" data-grid-modifier="first">
+<pre><code class="language-markup">&lt;div class="grid"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12 first"&gt; 2 &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12 first">
-						<div class="demo__item">
-							2 — first
+
+						<div class="demo__grid-modifier" data-grid-modifier="last">
+<pre><code class="language-markup">&lt;div class="grid"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12 last"&gt; 2 &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							3
+
+						<div class="demo__grid-modifier" data-grid-modifier="push">
+<pre><code class="language-markup">&lt;div class="grid"&gt;
+	&lt;div class="grid__item" data-grid="3/12 push--1/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
 						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="pull">
+<pre><code class="language-markup">&lt;div class="grid"&gt;
+	&lt;div class="grid__item" data-grid="3/12 pull--1/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
 					</div>
+
+					<div class="tabs__content" data-tabs-content="2">
+
+						<div class="demo__grid-modifier is-active" data-grid-modifier="first">
+							<div class="grid">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										1
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12 first">
+									<div class="demo__item">
+										2
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										3
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="last">
+							<div class="grid">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										1
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12 last">
+									<div class="demo__item">
+										2
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										3
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="push">
+							<div class="grid">
+								<div class="grid__item" data-grid="3/12 push--1/12">
+									<div class="demo__item">
+										push--1/12
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="pull">
+							<div class="grid">
+								<div class="grid__item" data-grid="3/12 pull--1/12">
+									<div class="demo__item">
+										pull--1/12
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
 				</div>
 			</div>
-		</div>
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="last"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid">
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							1
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12 last">
-						<div class="demo__item">
-							2 — last
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-							3
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="push--x/x"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid">
-					<div class="grid__item" data-grid="3/12 push--1/12">
-						<div class="demo__item">
-							push--1/12
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h4>
-						data-grid="pull--x/x"
-					</h4>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="inner">
-				<div class="grid">
-					<div class="grid__item" data-grid="3/12 pull--1/12">
-						<div class="demo__item">
-							pull--1/12
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-					<div class="grid__item" data-grid="4/12">
-						<div class="demo__item">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
+	</section>
 
 </main>
 
