@@ -714,7 +714,7 @@
 						Settings
 					</h2>
 					<p>
-						All settings for this grid are stored in a map.
+						All settings for this grid are stored in a map called <code>$grid-settings</code>. I recommend to copy the default settings into your scss-file. After that you can configure how you want it.
 					</p>
 				</header>
 			</div>
@@ -740,7 +740,11 @@
 				<div class="inner">
 
 					<div class="tabs__content is-active" data-tabs-content="1">
-<pre><code class="language-sass">$grid-settings: (
+						settings
+					</div>
+
+					<div class="tabs__content" data-tabs-content="2">
+<pre><code class="language-scss">$grid-settings: (
   breakpoints: (
     small: 'only screen and (min-width: 400px)',
     medium: 'only screen and (min-width: 700px)',
