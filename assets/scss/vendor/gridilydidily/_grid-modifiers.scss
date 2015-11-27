@@ -154,28 +154,6 @@
 
 }
 
-@mixin grid-first($modifier: '') {
-
-	$modifier: add-dashes-to-modifier($modifier);
-
-	.grid__item[data-grid#{$modifier}^='first'],
-	.grid__item[data-grid#{$modifier}*=' first'] {
-		order: -1;
-	}
-
-}
-
-@mixin grid-last($modifier: '') {
-
-	$modifier: add-dashes-to-modifier($modifier);
-
-	.grid__item[data-grid#{$modifier}^='last'],
-	.grid__item[data-grid#{$modifier}*=' last'] {
-		order: 1;
-	}
-
-}
-
 @mixin grid-between($modifier: '') {
 
 	$modifier: add-dashes-to-modifier($modifier);

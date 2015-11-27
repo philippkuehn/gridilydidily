@@ -1,7 +1,8 @@
 @import "gridilydidily/defaults";
 @import "gridilydidily/helper";
 @import "gridilydidily/layout";
-@import "gridilydidily/modifier";
+@import "gridilydidily/grid-modifiers";
+@import "gridilydidily/item-modifiers";
 
 // merge settings with default settings
 $grid-settings: () !default;
