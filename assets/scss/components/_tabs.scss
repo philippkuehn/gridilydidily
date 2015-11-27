@@ -34,7 +34,8 @@
 			pointer-events: none;
 		}
 
-		&--markup::before {
+		&--markup::before,
+		&--defaults::before {
 			background-image: svg("code", "[fill]: #{$medium-grey}");
 		}
 
@@ -42,17 +43,26 @@
 			background-image: svg("eye", "[fill]: #{$medium-grey}");
 		}
 
+		&--settings::before {
+			background-image: svg("cog", "[fill]: #{$medium-grey}");
+		}
+
 		&.is-active {
 			color: $light-grey;
 			background: $very-dark-blue;
 		}
 
-		&--markup.is-active::before {
+		&--markup.is-active::before,
+		&--defaults.is-active::before {
 			background-image: svg("code", "[fill]: #{$light-grey}");
 		}
 
 		&--demo.is-active::before {
 			background-image: svg("eye", "[fill]: #{$light-grey}");
+		}
+
+		&--settings.is-active::before {
+			background-image: svg("cog", "[fill]: #{$light-grey}");
 		}
 
 	}
