@@ -1,40 +1,66 @@
 .table {
 
-	display: table;
-	width: 100%;
+	@include min-width(small) {
+		display: table;
+		width: 100%;
+	}
 
 	&__header {
-		display: table-header-group;
+		display: none;
+		@include min-width(small) {
+			display: table-header-group;
+		}
 	}
 
 	&__row {
-		display: table-row;
+		padding: 1.25em 0;
+		border-bottom: 3px solid $dark-blue;
+
+		@include min-width(small) {
+			display: table-row;
+			padding: 0;
+			border: none;
+		}
 	}
 
 	&__cell {
-		display: table-cell;
-		padding: 1.25em .8em;
-		border-bottom: 3px solid $dark-blue;
 
-		&:first-child {
-			padding-left: 0;
-		}
+		margin-bottom: .75em;
 
-		&:last-child {
-			padding-right: 0;
+		@include min-width(small) {
+			display: table-cell;
+			padding: 1.25em .8em;
+			margin: 0;
+			border-bottom: 3px solid $dark-blue;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
 		}
 
 	}
 
-	&__row:last-child &__cell {
-		border-bottom: none;
+	@include min-width(small) {
+		&__row:last-child &__cell {
+			border-bottom: none;
+		}
+
+		&__header &__cell {
+			border-bottom: 3px solid $light-grey;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+		}
 	}
 
-	&__header &__cell {
-		border-bottom: 3px solid $light-grey;
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: .1em;
+	&__mobile-headline {
+		@include min-width(small) {
+			display: none;
+		}
 	}
 
 }
