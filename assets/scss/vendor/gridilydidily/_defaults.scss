@@ -8,11 +8,10 @@ $grid-default-settings: (
 		12,
 	),
 	gutters: (
-		none: 0em,
+		none: 0,
 		narrow: .7em,
 		normal: 1.25em,
 		wide: 2.5em,
-		x-wide: 4em,
 	),
 	default-gutter: 1.25em,
 	gutter-breakpoints: true,
