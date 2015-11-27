@@ -741,6 +741,87 @@
 			<div class="inner">
 				<header class="section__header">
 					<h2>
+						Gutters
+					</h2>
+					<p>
+						Create you own gutters in <code>$grid-settings</code> and use them like grid modifiers at your defined breakpoints. In addition, you can also make use of different vertical gutters – simply prefix them with <code>v--</code>.
+					</p>
+				</header>
+			</div>
+		</div>
+
+		<div class="section__row" data-tabs>
+			<header class="section__header">
+				<ul class="tabs__list">
+					<li class="tabs__item">
+						<button class="tabs__button tabs__button--markup is-active" data-tabs-button="1">
+							Markup
+						</button>
+					</li>
+					<li class="tabs__item">
+						<button class="tabs__button tabs__button--demo" data-tabs-button="2">
+							Demo
+						</button>
+					</li>
+				</ul>
+			</header>
+
+			<div class="section__code">
+				<div class="inner">
+
+					<div class="tabs__content is-active" data-tabs-content="1">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="none" data-grid--large="wide v--narrow"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+					</div>
+
+					<div class="tabs__content" data-tabs-content="2">
+						<div class="grid" data-grid="none" data-grid--large="wide v--narrow">
+							<div class="grid__item" data-grid="4/12">
+								<div class="demo__item">
+								</div>
+							</div>
+							<div class="grid__item" data-grid="4/12">
+								<div class="demo__item">
+								</div>
+							</div>
+							<div class="grid__item" data-grid="4/12">
+								<div class="demo__item">
+								</div>
+							</div>
+							<div class="grid__item" data-grid="4/12">
+								<div class="demo__item">
+								</div>
+							</div>
+							<div class="grid__item" data-grid="4/12">
+								<div class="demo__item">
+								</div>
+							</div>
+							<div class="grid__item" data-grid="4/12">
+								<div class="demo__item">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="section" data-demo>
+
+		<div class="section__row">
+			<div class="inner">
+				<header class="section__header">
+					<h2>
 						Settings
 					</h2>
 					<p>
