@@ -1,8 +1,8 @@
 @import "gridilydidily/defaults";
 @import "gridilydidily/helper";
 @import "gridilydidily/layout";
-@import "gridilydidily/modifier";
-@import "gridilydidily/helper-classes";
+@import "gridilydidily/grid-modifiers";
+@import "gridilydidily/item-modifiers";
 
 // merge settings with default settings
 $grid-settings: () !default;
@@ -22,74 +22,79 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 	@include grid-vertical-gutter();
 }
 
-// create pushes
-@if grid-option('push') {
-	@include grid-push();
-}
-
-// create pulls
-@if grid-option('pull') {
-	@include grid-pull();
-}
-
 // create left modifier
-@if grid-option('modifier', 'left') {
+@if grid-option-contain('grid-modifiers', 'left') {
 	@include grid-left();
 }
 
-// create center modifier
-@if grid-option('modifier', 'center') {
+// create center grid-modifier
+@if grid-option-contain('grid-modifiers', 'center') {
 	@include grid-center();
 }
 
-// create right modifier
-@if grid-option('modifier', 'right') {
+// create right grid-modifier
+@if grid-option-contain('grid-modifiers', 'right') {
 	@include grid-right();
 }
 
-// create top modifier
-@if grid-option('modifier', 'top') {
+// create top grid-modifier
+@if grid-option-contain('grid-modifiers', 'top') {
 	@include grid-top();
 }
 
-// create middle modifier
-@if grid-option('modifier', 'middle') {
+// create middle grid-modifier
+@if grid-option-contain('grid-modifiers', 'middle') {
 	@include grid-middle();
 }
 
-// create bottom modifier
-@if grid-option('modifier', 'bottom') {
+// create bottom grid-modifier
+@if grid-option-contain('grid-modifiers', 'bottom') {
 	@include grid-bottom();
 }
 
-// create reverse modifier
-@if grid-option('modifier', 'reverse') {
-	@include grid-reverse();
-}
-
-// create forwards modifier
-@if grid-option('modifier', 'forwards') {
+// create forwards grid-modifier
+@if grid-option-contain('grid-modifiers', 'forwards') {
 	@include grid-forwards();
 }
 
-// create first modifier
-@if grid-option('modifier', 'first') {
-	@include grid-first();
+// create backwards grid-modifier
+@if grid-option-contain('grid-modifiers', 'backwards') {
+	@include grid-backwards();
 }
 
-// create last modifier
-@if grid-option('modifier', 'last') {
-	@include grid-last();
-}
-
-// create between modifier
-@if grid-option('modifier', 'between') {
+// create between grid-modifier
+@if grid-option-contain('grid-modifiers', 'between') {
 	@include grid-between();
 }
 
-// create around modifier
-@if grid-option('modifier', 'around') {
+// create around grid-modifier
+@if grid-option-contain('grid-modifiers', 'around') {
 	@include grid-around();
+}
+
+// create first item-modifier
+@if grid-option-contain('item-modifiers', 'first') {
+	@include grid-first();
+}
+
+// create last item-modifier
+@if grid-option-contain('item-modifiers', 'last') {
+	@include grid-last();
+}
+
+// create reset-order item-modifier
+@if grid-option-contain('item-modifiers', 'reset-order') {
+	@include grid-reset-order();
+}
+
+// create push item-modifier
+@if grid-option-contain('item-modifiers', 'push') {
+	@include grid-push();
+}
+
+// create pull item-modifier
+@if grid-option-contain('item-modifiers', 'pull') {
+	@include grid-pull();
 }
 
 // create stuff based on breakpoints
@@ -109,74 +114,79 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 			@include grid-vertical-gutter($breakpoint-name);
 		}
 
-		// create pushes
-		@if grid-option('push') and grid-option('push-breakpoints') {
-			@include grid-push($breakpoint-name);
-		}
-
-		// create pulls
-		@if grid-option('pull') and grid-option('pull-breakpoints') {
-			@include grid-pull($breakpoint-name);
-		}
-
-		// create left modifier
-		@if grid-option('modifier', 'left') and grid-option('modifier-breakpoints') {
+		// create left grid-modifier
+		@if grid-option-contain('grid-modifiers', 'left') and grid-option('grid-modifier-breakpoints') {
 			@include grid-left($breakpoint-name);
 		}
 
-		// create center modifier
-		@if grid-option('modifier', 'center') and grid-option('modifier-breakpoints') {
+		// create center grid-modifier
+		@if grid-option-contain('grid-modifiers', 'center') and grid-option('grid-modifier-breakpoints') {
 			@include grid-center($breakpoint-name);
 		}
 
-		// create right modifier
-		@if grid-option('modifier', 'right') and grid-option('modifier-breakpoints') {
+		// create right grid-modifier
+		@if grid-option-contain('grid-modifiers', 'right') and grid-option('grid-modifier-breakpoints') {
 			@include grid-right($breakpoint-name);
 		}
 
-		// create top modifier
-		@if grid-option('modifier', 'top') and grid-option('modifier-breakpoints') {
+		// create top grid-modifier
+		@if grid-option-contain('grid-modifiers', 'top') and grid-option('grid-modifier-breakpoints') {
 			@include grid-top($breakpoint-name);
 		}
 
-		// create middle modifier
-		@if grid-option('modifier', 'middle') and grid-option('modifier-breakpoints') {
+		// create middle grid-modifier
+		@if grid-option-contain('grid-modifiers', 'middle') and grid-option('grid-modifier-breakpoints') {
 			@include grid-middle($breakpoint-name);
 		}
 
-		// create bottom modifier
-		@if grid-option('modifier', 'bottom') and grid-option('modifier-breakpoints') {
+		// create bottom grid-modifier
+		@if grid-option-contain('grid-modifiers', 'bottom') and grid-option('grid-modifier-breakpoints') {
 			@include grid-bottom($breakpoint-name);
 		}
 
-		// create reverse modifier
-		@if grid-option('modifier', 'reverse') and grid-option('modifier-breakpoints') {
-			@include grid-reverse($breakpoint-name);
-		}
-
-		// create forwards modifier
-		@if grid-option('modifier', 'forwards') and grid-option('modifier-breakpoints') {
+		// create forwards grid-modifier
+		@if grid-option-contain('grid-modifiers', 'forwards') and grid-option('grid-modifier-breakpoints') {
 			@include grid-forwards($breakpoint-name);
 		}
 
-		// create first modifier
-		@if grid-option('modifier', 'first') and grid-option('modifier-breakpoints') {
-			@include grid-first($breakpoint-name);
+		// create backwards grid-modifier
+		@if grid-option-contain('grid-modifiers', 'backwards') and grid-option('grid-modifier-breakpoints') {
+			@include grid-backwards($breakpoint-name);
 		}
 
-		// create last modifier
-		@if grid-option('modifier', 'last') and grid-option('modifier-breakpoints') {
-			@include grid-last($breakpoint-name);
-		}
-
-		// create between modifier
-		@if grid-option('modifier', 'between') and grid-option('modifier-breakpoints') {
+		// create between grid-modifier
+		@if grid-option-contain('grid-modifiers', 'between') and grid-option('grid-modifier-breakpoints') {
 			@include grid-between($breakpoint-name);
 		}
 
-		// create around modifier
-		@if grid-option('modifier', 'around') and grid-option('modifier-breakpoints') {
+		// create around grid-modifier
+		@if grid-option-contain('grid-modifiers', 'around') and grid-option('grid-modifier-breakpoints') {
 			@include grid-around($breakpoint-name);
+		}
+
+		// create first grid-modifier
+		@if grid-option-contain('item-modifiers', 'first') and grid-option('item-modifier-breakpoints') {
+			@include grid-first($breakpoint-name);
+		}
+
+		// create last grid-modifier
+		@if grid-option-contain('item-modifiers', 'last') and grid-option('item-modifier-breakpoints') {
+			@include grid-last($breakpoint-name);
+		}
+
+		// create reset-order grid-modifier
+		@if grid-option-contain('item-modifiers', 'reset-order') and grid-option('item-modifier-breakpoints') {
+			@include grid-reset-order($breakpoint-name);
+		}
+
+		// create push item-modifier
+		@if grid-option-contain('item-modifiers', 'push') and grid-option('item-modifier-breakpoints') {
+			@include grid-push($breakpoint-name);
+		}
+
+		// create pull item-modifier
+		@if grid-option-contain('item-modifiers', 'pull') and grid-option('item-modifier-breakpoints') {
+			@include grid-pull($breakpoint-name);
 		}
 
 	}

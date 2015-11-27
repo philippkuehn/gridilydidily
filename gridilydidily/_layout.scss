@@ -73,36 +73,6 @@
 
 }
 
-@mixin grid-push($modifier: '') {
-
-	$modifier: add-dashes-to-modifier($modifier);
-
-	@each $grid-base in grid-option('bases') {
-		@for $counter from 1 through $grid-base {
-			.grid__item[data-grid#{$modifier}^='push--#{$counter}/#{$grid-base}'],
-			.grid__item[data-grid#{$modifier}*=' push--#{$counter}/#{$grid-base}'] {
-				margin-left: $counter / $grid-base * 100%;
-			}
-		}
-	}
-
-}
-
-@mixin grid-pull($modifier: '') {
-
-	$modifier: add-dashes-to-modifier($modifier);
-
-	@each $grid-base in grid-option('bases') {
-		@for $counter from 1 through $grid-base {
-			.grid__item[data-grid#{$modifier}^='pull--#{$counter}/#{$grid-base}'],
-			.grid__item[data-grid#{$modifier}*=' pull--#{$counter}/#{$grid-base}'] {
-				margin-left: -($counter / $grid-base * 100%);
-			}
-		}
-	}
-
-}
-
 @mixin grid-gutter($modifier: '') {
 
 	$modifier: add-dashes-to-modifier($modifier);
