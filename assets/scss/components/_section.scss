@@ -1,6 +1,9 @@
 .section {
 
 	padding-bottom: 5em;
+	@include min-width(medium) {
+		padding-bottom: 7em;
+	}
 
 	&__row {
 		margin-bottom: 3em;
