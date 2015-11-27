@@ -705,6 +705,91 @@
 
 	</section>
 
+	<section class="section" data-demo>
+
+		<div class="section__row">
+			<div class="inner">
+				<header class="section__header">
+					<h2>
+						Settings
+					</h2>
+					<p>
+						All settings for this grid are stored in a map.
+					</p>
+				</header>
+			</div>
+		</div>
+
+		<div class="section__row" data-tabs>
+			<header class="section__header">
+				<ul class="tabs__list">
+					<li class="tabs__item">
+						<button class="tabs__button tabs__button--markup is-active" data-tabs-button="1">
+							Settings
+						</button>
+					</li>
+					<li class="tabs__item">
+						<button class="tabs__button tabs__button--demo" data-tabs-button="2">
+							Defaults
+						</button>
+					</li>
+				</ul>
+			</header>
+
+			<div class="section__code">
+				<div class="inner">
+
+					<div class="tabs__content is-active" data-tabs-content="1">
+<pre><code class="language-sass">$grid-settings: (
+  breakpoints: (
+    small: 'only screen and (min-width: 400px)',
+    medium: 'only screen and (min-width: 700px)',
+    large: 'only screen and (min-width: 1200px)',
+  ),
+  bases: (
+    12,
+  ),
+  gutters: (
+    none: 0em,
+    narrow: .7em,
+    normal: 1.25em,
+    wide: 2.5em,
+    x-wide: 4em,
+  ),
+  default-gutter: 1.25em,
+  gutter-breakpoints: true,
+  vertical-gutters: true,
+  fallback: true,
+  fallback-markup-fix: true,
+  push: true,
+  push-breakpoints: true,
+  pull: true,
+  pull-breakpoints: true,
+  modifier: (
+    left: true,
+    center: true,
+    right: true,
+    top: true,
+    middle: true,
+    bottom: true,
+    reverse: true,
+    forwards: true,
+    first: true,
+    last: true,
+    between: true,
+    around: true,
+  ),
+  modifier-breakpoints: true,
+);
+</code></pre>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
 </main>
 
 <footer class="footer">
