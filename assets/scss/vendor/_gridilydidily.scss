@@ -2,7 +2,6 @@
 @import "gridilydidily/helper";
 @import "gridilydidily/layout";
 @import "gridilydidily/modifier";
-@import "gridilydidily/helper-classes";
 
 // merge settings with default settings
 $grid-settings: () !default;
@@ -20,16 +19,6 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 // create vertical grid gutters
 @if grid-option('vertical-gutters') {
 	@include grid-vertical-gutter();
-}
-
-// create pushes
-@if grid-option('push') {
-	@include grid-push();
-}
-
-// create pulls
-@if grid-option('pull') {
-	@include grid-pull();
 }
 
 // create left modifier
@@ -92,6 +81,16 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 	@include grid-around();
 }
 
+// create pushes
+@if grid-option('item-modifier', 'push') {
+	@include grid-push();
+}
+
+// create pulls
+@if grid-option('item-modifier', 'pull') {
+	@include grid-pull();
+}
+
 // create stuff based on breakpoints
 @each $breakpoint-name, $breakpoint-condition in grid-option('breakpoints') {
 	@media #{$breakpoint-condition} {
@@ -107,16 +106,6 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 		// create vertical grid gutters
 		@if grid-option('gutter-breakpoints') and grid-option('vertical-gutters') {
 			@include grid-vertical-gutter($breakpoint-name);
-		}
-
-		// create pushes
-		@if grid-option('push') and grid-option('push-breakpoints') {
-			@include grid-push($breakpoint-name);
-		}
-
-		// create pulls
-		@if grid-option('pull') and grid-option('pull-breakpoints') {
-			@include grid-pull($breakpoint-name);
 		}
 
 		// create left grid-modifier
@@ -177,6 +166,16 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 		// create around grid-modifier
 		@if grid-option('grid-modifier', 'around') and grid-option('grid-modifier-breakpoints') {
 			@include grid-around($breakpoint-name);
+		}
+
+		// create pushes
+		@if grid-option('item-modifier', 'push') and grid-option('item-modifier-breakpoints') {
+			@include grid-push($breakpoint-name);
+		}
+
+		// create pulls
+		@if grid-option('item-modifier', 'pull') and grid-option('item-modifier-breakpoints') {
+			@include grid-pull($breakpoint-name);
 		}
 
 	}

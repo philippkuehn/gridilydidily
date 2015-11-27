@@ -19,10 +19,6 @@ $grid-default-settings: (
 	vertical-gutters: true,
 	fallback: true,
 	fallback-markup-fix: false,
-	push: true,
-	push-breakpoints: true,
-	pull: true,
-	pull-breakpoints: true,
 	grid-modifier: (
 		left: true,
 		center: true,
@@ -38,4 +34,11 @@ $grid-default-settings: (
 		around: true,
 	),
 	grid-modifier-breakpoints: true,
+	item-modifier: (
+		first: true,
+		last: true,
+		push: true,
+		pull: true,
+	),
+	item-modifier-breakpoints: true,
 );

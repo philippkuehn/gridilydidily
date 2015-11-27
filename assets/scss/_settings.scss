@@ -25,15 +25,15 @@ $bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 // Used in: scss/utilities/_z-index.scss
 
 $z-layers: (
-  'modal':            9000,
-  'overlay':          8000,
-  'dropdown':         7000,
-  'navigation':       6000,
-  'footer':           5000,
-  'tooltip':          4000,
-  'header':           1000,
-  'default':             1,
-  'bottomless-pit':  -9000
+	'modal':            9000,
+	'overlay':          8000,
+	'dropdown':         7000,
+	'navigation':       6000,
+	'footer':           5000,
+	'tooltip':          4000,
+	'header':           1000,
+	'default':             1,
+	'bottomless-pit':  -9000
 );
 
 // ----------------------------------------------------------------------------
@@ -44,13 +44,13 @@ $z-layers: (
 // Used in: scss/utilities/_breakpoints.scss
 
 $breakpoints: (
-  'x-small':   350px,
-  'small':     600px,
-  'medium':    800px,
-  'large':     1000px,
-  'x-large':   1400px,
-  'xx-large':  1800px,
-  'xxx-large':  2300px
+	'x-small':   350px,
+	'small':     600px,
+	'medium':    800px,
+	'large':     1000px,
+	'x-large':   1400px,
+	'xx-large':  1800px,
+	'xxx-large':  2300px
 );
 
 // ----------------------------------------------------------------------------
@@ -68,7 +68,7 @@ $rem-baseline: 16px !default;
 // ----------------------------------------------------------------------------
 
 %debug {
-  background: rgba(255,0,0, .1);
+	background: rgba(255,0,0, .1);
 }
 
 // ----------------------------------------------------------------------------
@@ -85,44 +85,47 @@ $font-line-height: 1.4;
 // ----------------------------------------------------------------------------
 
 $grid-settings: (
-  breakpoints: (
-    small: 'only screen and (min-width: 400px)',
-    medium: 'only screen and (min-width: 700px)',
-    large: 'only screen and (min-width: 1200px)',
-  ),
-  bases: (
-    8,
-    12,
-  ),
-  gutters: (
-    none: 0em,
-    narrow: .7em,
-    normal: 1.25em,
-    wide: 2.5em,
-    x-wide: 4em,
-  ),
-  default-gutter: 1.25em,
-  gutter-breakpoints: true,
-  vertical-gutters: true,
-  fallback: true,
-  fallback-markup-fix: true,
-  push: true,
-  push-breakpoints: true,
-  pull: true,
-  pull-breakpoints: true,
-  grid-modifier: (
-    left: true,
-    center: true,
-    right: true,
-    top: true,
-    middle: true,
-    bottom: true,
-    reverse: true,
-    forwards: true,
-    first: true,
-    last: true,
-    between: true,
-    around: true,
-  ),
-  grid-modifier-breakpoints: true,
+	breakpoints: (
+		small: 'only screen and (min-width: 400px)',
+		medium: 'only screen and (min-width: 700px)',
+		large: 'only screen and (min-width: 1200px)',
+	),
+	bases: (
+		8,
+		12,
+	),
+	gutters: (
+		none: 0em,
+		narrow: .7em,
+		normal: 1.25em,
+		wide: 2.5em,
+		x-wide: 4em,
+	),
+	default-gutter: 1.25em,
+	gutter-breakpoints: true,
+	vertical-gutters: true,
+	fallback: true,
+	fallback-markup-fix: true,
+	grid-modifier: (
+		left: true,
+		center: true,
+		right: true,
+		top: true,
+		middle: true,
+		bottom: true,
+		reverse: true,
+		forwards: true,
+		first: true,
+		last: true,
+		between: true,
+		around: true,
+	),
+	grid-modifier-breakpoints: true,
+	item-modifier: (
+		first: true,
+		last: true,
+		push: true,
+		pull: true,
+	),
+	item-modifier-breakpoints: true,
 );
