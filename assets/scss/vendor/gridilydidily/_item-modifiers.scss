@@ -44,6 +44,11 @@
 		}
 	}
 
+	.grid__item[data-grid#{$modifier}^='push--none'],
+	.grid__item[data-grid#{$modifier}*=' push--none'] {
+		margin-left: 0;
+	}
+
 }
 
 @mixin grid-pull($modifier: '') {
@@ -57,6 +62,11 @@
 				margin-left: -($counter / $grid-base * 100%);
 			}
 		}
+	}
+
+	.grid__item[data-grid#{$modifier}^='pull--none'],
+	.grid__item[data-grid#{$modifier}*=' pull--none'] {
+		margin-left: 0;
 	}
 
 }
