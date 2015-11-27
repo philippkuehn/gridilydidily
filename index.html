@@ -5,9 +5,9 @@
 	<title>Gridilydidily</title>
 	<meta name="description" content="A highly configurable data-attribute driven flexbox grid with inline-block fallback.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="assets/images/favicon.gif" type="image/x-icon">
 	<script type="text/javascript" src="assets/js/dest/libs.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300|Source+Code+Pro' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,400italic,300|Source+Code+Pro' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/scss/dest/style.css">
 	<!--[if lt IE 9]><!-->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
@@ -15,761 +15,763 @@
 </head>
 <body>
 
-<header class="header v-align__wrapper">
-	<div class="v-align">
-		<div class="inner">
-			<h1 class="header__headline">
-				Gridilydidily
-			</h1>
-			<h3 class="header__subline">
-				A highly configurable & data-attribute driven flexbox grid with inline-block fallback.
-			</h3>
-			<div class="header__buttons">
-				<a class="button button--large button--split button--key" href="//github.com/philippkuehn/gridilydidily/">
-					Github
-				</a><a class="button button--large button--split button--key" href="//github.com/philippkuehn/gridilydidily/archive/master.zip" download>
-					Download
-				</a>
-			</div>
-			<div class="header__version">
-				v2.0.0
-			</div>
-		</div>
-	</div>
-</header>
+<div class="wrapper">
 
-<main class="main">
-
-	<section class="section">
-		<div class="inner">
-
-			<div class="grid">
-				<div class="grid__item" data-grid="1/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>1</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="7/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>7</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="2/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>2</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="6/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>6</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="3/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>3</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="5/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>5</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="4/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>4</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="4/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>4</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="5/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>5</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="3/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>3</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="6/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>6</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="2/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>2</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="7/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>7</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-				<div class="grid__item" data-grid="1/8">
-					<div class="demo__item">
-						<div class="demo__fraction">
-							<sup>1</sup>&frasl;<sub>8</sub>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-
-	<section class="section" data-demo>
-
-		<div class="section__row">
+	<header class="header v-align__wrapper">
+		<div class="v-align">
 			<div class="inner">
-				<header class="section__header">
-					<h2>
-						Grid Modifiers
-					</h2>
-					<p>
-						Gridilydididly has a lot of grid modifiers. Some of them are flexbox-only but it's only a matter of time before we can drop support for old IE. Until then Gridilydidily has inline-block fallback.
-					</p>
-				</header>
+				<h1 class="header__headline">
+					Gridilydidily
+				</h1>
+				<h3 class="header__subline">
+					A highly configurable, data-attribute driven and flexbox based sass-grid with inline-block fallback.
+				</h3>
+				<div class="header__buttons">
+					<a class="button button--large button--split button--key" href="//github.com/philippkuehn/gridilydidily/">
+						Github
+					</a><a class="button button--large button--split button--key" href="//github.com/philippkuehn/gridilydidily/archive/master.zip" download>
+						Download
+					</a>
+				</div>
+				<div class="header__version">
+					v2.0.0
+				</div>
 			</div>
 		</div>
+	</header>
 
-		<div class="section__row">
-			<div class="section__header">
-				<button class="button" data-demo-button="left">left</button>
-				<button class="button is-active" data-demo-button="center">center</button>
-				<button class="button" data-demo-button="right">right</button>
-				<button class="button" data-demo-button="top">top</button>
-				<button class="button" data-demo-button="middle">middle</button>
-				<button class="button" data-demo-button="bottom">bottom</button>
-				<button class="button" data-demo-button="forwards">forwards</button>
-				<button class="button" data-demo-button="backwards">backwards</button>
-				<button class="button" data-demo-button="between">between</button>
-				<button class="button" data-demo-button="around">around</button>
+	<main class="main">
+
+		<section class="section">
+			<div class="inner">
+
+				<div class="grid">
+					<div class="grid__item" data-grid="1/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>1</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="7/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>7</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="2/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>2</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="6/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>6</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="3/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>3</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="5/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>5</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="4/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>4</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="4/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>4</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="5/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>5</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="3/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>3</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="6/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>6</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="2/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>2</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="7/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>7</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+					<div class="grid__item" data-grid="1/8">
+						<div class="demo__item">
+							<div class="demo__fraction">
+								<sup>1</sup>&frasl;<sub>8</sub>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
-		</div>
+		</section>
 
-		<div class="section__row" data-tabs>
-			<header class="section__header">
-				<ul class="tabs__list">
-					<li class="tabs__item">
-						<button class="tabs__button tabs__button--markup is-active" data-tabs-button="1">
-							Markup
-						</button>
-					</li>
-					<li class="tabs__item">
-						<button class="tabs__button tabs__button--demo" data-tabs-button="2">
-							Demo
-						</button>
-					</li>
-				</ul>
-			</header>
 
-			<div class="section__code">
+		<section class="section" data-demo>
+
+			<div class="section__row">
 				<div class="inner">
+					<header class="section__header">
+						<h2>
+							Grid Modifiers
+						</h2>
+						<p>
+							Gridilydididly has a lot of grid modifiers. Some of them are flexbox-only but it's only a matter of time before we can drop support for old IE. Until then Gridilydidily has inline-block fallback.
+						</p>
+					</header>
+				</div>
+			</div>
 
-					<div class="tabs__content is-active" data-tabs-content="1">
+			<div class="section__row">
+				<div class="section__header">
+					<button class="button" data-demo-button="left">left</button>
+					<button class="button is-active" data-demo-button="center">center</button>
+					<button class="button" data-demo-button="right">right</button>
+					<button class="button" data-demo-button="top">top</button>
+					<button class="button" data-demo-button="middle">middle</button>
+					<button class="button" data-demo-button="bottom">bottom</button>
+					<button class="button" data-demo-button="forwards">forwards</button>
+					<button class="button" data-demo-button="backwards">backwards</button>
+					<button class="button" data-demo-button="between">between</button>
+					<button class="button" data-demo-button="around">around</button>
+				</div>
+			</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="left">
+			<div class="section__row" data-tabs>
+				<header class="section__header">
+					<ul class="tabs__list">
+						<li class="tabs__item">
+							<button class="tabs__button tabs__button--markup is-active" data-tabs-button="1">
+								Markup
+							</button>
+						</li>
+						<li class="tabs__item">
+							<button class="tabs__button tabs__button--demo" data-tabs-button="2">
+								Demo
+							</button>
+						</li>
+					</ul>
+				</header>
+
+				<div class="section__code">
+					<div class="inner">
+
+						<div class="tabs__content is-active" data-tabs-content="1">
+
+							<div class="demo__grid-modifier" data-grid-modifier="left">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="left"&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier is-active" data-grid-modifier="center">
+							<div class="demo__grid-modifier is-active" data-grid-modifier="center">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="center"&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="right">
+							<div class="demo__grid-modifier" data-grid-modifier="right">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="right"&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="top">
+							<div class="demo__grid-modifier" data-grid-modifier="top">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="top"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="middle">
+							<div class="demo__grid-modifier" data-grid-modifier="middle">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="middle"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="bottom">
+							<div class="demo__grid-modifier" data-grid-modifier="bottom">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="bottom"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="forwards">
+							<div class="demo__grid-modifier" data-grid-modifier="forwards">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="forwards"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 2 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="backwards">
+							<div class="demo__grid-modifier" data-grid-modifier="backwards">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="backwards"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 2 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="between">
+							<div class="demo__grid-modifier" data-grid-modifier="between">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="between"&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="around">
+							<div class="demo__grid-modifier" data-grid-modifier="around">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="around"&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+							</div>
+
+						</div>
+
+						<div class="tabs__content" data-tabs-content="2">
+
+							<div class="demo__grid-modifier" data-grid-modifier="left">
+								<div class="grid" data-grid="left">
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier is-active" data-grid-modifier="center">
+								<div class="grid" data-grid="center">
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="right">
+								<div class="grid" data-grid="right">
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="top">
+								<div class="grid" data-grid="top">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item demo__item--large">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="middle">
+								<div class="grid" data-grid="middle">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item demo__item--large">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="bottom">
+								<div class="grid" data-grid="bottom">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item demo__item--large">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="forwards">
+								<div class="grid" data-grid="forwards">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											1
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											2
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="backwards">
+								<div class="grid" data-grid="backwards">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											1
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											2
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="between">
+								<div class="grid" data-grid="between">
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="around">
+								<div class="grid" data-grid="around">
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 
 					</div>
-
-					<div class="tabs__content" data-tabs-content="2">
-
-						<div class="demo__grid-modifier" data-grid-modifier="left">
-							<div class="grid" data-grid="left">
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier is-active" data-grid-modifier="center">
-							<div class="grid" data-grid="center">
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="right">
-							<div class="grid" data-grid="right">
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="top">
-							<div class="grid" data-grid="top">
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item demo__item--large">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="middle">
-							<div class="grid" data-grid="middle">
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item demo__item--large">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="bottom">
-							<div class="grid" data-grid="bottom">
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item demo__item--large">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="forwards">
-							<div class="grid" data-grid="forwards">
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										1
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										2
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										3
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="backwards">
-							<div class="grid" data-grid="backwards">
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										1
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										2
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										3
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="between">
-							<div class="grid" data-grid="between">
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="around">
-							<div class="grid" data-grid="around">
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="3/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
 				</div>
 			</div>
-		</div>
 
-	</section>
+		</section>
 
-	<section class="section">
+		<section class="section">
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h3>
-						Multiple modifiers
-					</h3>
-					<p>
-						You can use multiple modifiers at the same time! It's dead simple – just seperate them with a space.
-					</p>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="section__code">
+			<div class="section__row">
 				<div class="inner">
+					<header class="section__header">
+						<h3>
+							Multiple modifiers
+						</h3>
+						<p>
+							You can use multiple modifiers at the same time! It's dead simple – just seperate them with a space.
+						</p>
+					</header>
+				</div>
+			</div>
+
+			<div class="section__row">
+				<div class="section__code">
+					<div class="inner">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="center middle backwards"&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+					</div>
 				</div>
 			</div>
-		</div>
 
-	</section>
+		</section>
 
-	<section class="section">
+		<section class="section">
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h3>
-						Breakpoints
-					</h3>
-					<p>
-						But how about breakpoints? Use them in a BEM-like data-attribute syntax and all your problems will resolve itself. You can define your needed breakpoints in your <code>$grid-settings</code>.
-					</p>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="section__code">
+			<div class="section__row">
 				<div class="inner">
+					<header class="section__header">
+						<h3>
+							Breakpoints
+						</h3>
+						<p>
+							But how about breakpoints? Use them in a BEM-like data-attribute syntax and all your problems will resolve itself. You can define your needed breakpoints in your <code>$grid-settings</code>.
+						</p>
+					</header>
+				</div>
+			</div>
+
+			<div class="section__row">
+				<div class="section__code">
+					<div class="inner">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="center" data-grid--medium="right" data-grid--large="left"&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+					</div>
 				</div>
 			</div>
-		</div>
 
-	</section>
+		</section>
 
-	<section class="section" data-demo>
+		<section class="section" data-demo>
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h2>
-						Item Modifiers
-					</h2>
-					<p>
-						Each grid-item can also have additional modifiers for sorting, pushing and pulling. You can use and reset them at different breakpoints too.
-					</p>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row">
-			<div class="section__header">
-				<button class="button is-active" data-demo-button="first">first</button>
-				<button class="button" data-demo-button="last">last</button>
-				<button class="button" data-demo-button="reset-order">reset-order</button>
-				<button class="button" data-demo-button="push">push</button>
-				<button class="button" data-demo-button="pull">pull</button>
-			</div>
-		</div>
-
-		<div class="section__row" data-tabs>
-			<header class="section__header">
-				<ul class="tabs__list">
-					<li class="tabs__item">
-						<button class="tabs__button tabs__button--markup is-active" data-tabs-button="1">
-							Markup
-						</button>
-					</li>
-					<li class="tabs__item">
-						<button class="tabs__button tabs__button--demo" data-tabs-button="2">
-							Demo
-						</button>
-					</li>
-				</ul>
-			</header>
-
-			<div class="section__code">
+			<div class="section__row">
 				<div class="inner">
+					<header class="section__header">
+						<h2>
+							Item Modifiers
+						</h2>
+						<p>
+							Each grid-item can also have additional modifiers for sorting, pushing and pulling. You can use and reset them at different breakpoints too.
+						</p>
+					</header>
+				</div>
+			</div>
 
-					<div class="tabs__content is-active" data-tabs-content="1">
+			<div class="section__row">
+				<div class="section__header">
+					<button class="button is-active" data-demo-button="first">first</button>
+					<button class="button" data-demo-button="last">last</button>
+					<button class="button" data-demo-button="reset-order">reset-order</button>
+					<button class="button" data-demo-button="push">push</button>
+					<button class="button" data-demo-button="pull">pull</button>
+				</div>
+			</div>
 
-						<div class="demo__grid-modifier is-active" data-grid-modifier="first">
+			<div class="section__row" data-tabs>
+				<header class="section__header">
+					<ul class="tabs__list">
+						<li class="tabs__item">
+							<button class="tabs__button tabs__button--markup is-active" data-tabs-button="1">
+								Markup
+							</button>
+						</li>
+						<li class="tabs__item">
+							<button class="tabs__button tabs__button--demo" data-tabs-button="2">
+								Demo
+							</button>
+						</li>
+					</ul>
+				</header>
+
+				<div class="section__code">
+					<div class="inner">
+
+						<div class="tabs__content is-active" data-tabs-content="1">
+
+							<div class="demo__grid-modifier is-active" data-grid-modifier="first">
 <pre><code class="language-markup">&lt;div class="grid"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12 first"&gt; 2 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="last">
+							<div class="demo__grid-modifier" data-grid-modifier="last">
 <pre><code class="language-markup">&lt;div class="grid"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12 last"&gt; 2 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="reset-order">
+							<div class="demo__grid-modifier" data-grid-modifier="reset-order">
 <pre><code class="language-markup">&lt;div class="grid"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12 reset-order"&gt; 2 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="push">
+							<div class="demo__grid-modifier" data-grid-modifier="push">
 <pre><code class="language-markup">&lt;div class="grid"&gt;
 	&lt;div class="grid__item" data-grid="3/12 push--1/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-						</div>
+							</div>
 
-						<div class="demo__grid-modifier" data-grid-modifier="pull">
+							<div class="demo__grid-modifier" data-grid-modifier="pull">
 <pre><code class="language-markup">&lt;div class="grid"&gt;
 	&lt;div class="grid__item" data-grid="3/12 pull--1/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+							</div>
+
+						</div>
+
+						<div class="tabs__content" data-tabs-content="2">
+
+							<div class="demo__grid-modifier is-active" data-grid-modifier="first">
+								<div class="grid">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											1
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12 first">
+										<div class="demo__item">
+											2
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="last">
+								<div class="grid">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											1
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12 last">
+										<div class="demo__item">
+											2
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="reset-order">
+								<div class="grid">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											1
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12 reset-order">
+										<div class="demo__item">
+											2
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+											3
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="push">
+								<div class="grid">
+									<div class="grid__item" data-grid="3/12 push--1/12">
+										<div class="demo__item">
+											push--1/12
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="pull">
+								<div class="grid">
+									<div class="grid__item" data-grid="3/12 pull--1/12">
+										<div class="demo__item">
+											pull--1/12
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 
 					</div>
+				</div>
 
-					<div class="tabs__content" data-tabs-content="2">
+		</section>
 
-						<div class="demo__grid-modifier is-active" data-grid-modifier="first">
-							<div class="grid">
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										1
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12 first">
-									<div class="demo__item">
-										2
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										3
-									</div>
-								</div>
-							</div>
-						</div>
+		<section class="section" data-demo>
 
-						<div class="demo__grid-modifier" data-grid-modifier="last">
-							<div class="grid">
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										1
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12 last">
-									<div class="demo__item">
-										2
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										3
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="reset-order">
-							<div class="grid">
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										1
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12 reset-order">
-									<div class="demo__item">
-										2
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-										3
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="push">
-							<div class="grid">
-								<div class="grid__item" data-grid="3/12 push--1/12">
-									<div class="demo__item">
-										push--1/12
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="demo__grid-modifier" data-grid-modifier="pull">
-							<div class="grid">
-								<div class="grid__item" data-grid="3/12 pull--1/12">
-									<div class="demo__item">
-										pull--1/12
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-								<div class="grid__item" data-grid="4/12">
-									<div class="demo__item">
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
+			<div class="section__row">
+				<div class="inner">
+					<header class="section__header">
+						<h2>
+							Gutters
+						</h2>
+						<p>
+							Create you own gutters in <code>$grid-settings</code> and use them like grid modifiers at your defined breakpoints. In addition, you can also make use of different vertical gutters – simply prefix them with <code>v--</code>.
+						</p>
+					</header>
 				</div>
 			</div>
 
-	</section>
-
-	<section class="section" data-demo>
-
-		<div class="section__row">
-			<div class="inner">
+			<div class="section__row" data-tabs>
 				<header class="section__header">
-					<h2>
-						Gutters
-					</h2>
-					<p>
-						Create you own gutters in <code>$grid-settings</code> and use them like grid modifiers at your defined breakpoints. In addition, you can also make use of different vertical gutters – simply prefix them with <code>v--</code>.
-					</p>
+					<ul class="tabs__list">
+						<li class="tabs__item">
+							<button class="tabs__button tabs__button--markup is-active" data-tabs-button="1">
+								Markup
+							</button>
+						</li>
+						<li class="tabs__item">
+							<button class="tabs__button tabs__button--demo" data-tabs-button="2">
+								Demo
+							</button>
+						</li>
+					</ul>
 				</header>
-			</div>
-		</div>
 
-		<div class="section__row" data-tabs>
-			<header class="section__header">
-				<ul class="tabs__list">
-					<li class="tabs__item">
-						<button class="tabs__button tabs__button--markup is-active" data-tabs-button="1">
-							Markup
-						</button>
-					</li>
-					<li class="tabs__item">
-						<button class="tabs__button tabs__button--demo" data-tabs-button="2">
-							Demo
-						</button>
-					</li>
-				</ul>
-			</header>
+				<div class="section__code">
+					<div class="inner">
 
-			<div class="section__code">
-				<div class="inner">
-
-					<div class="tabs__content is-active" data-tabs-content="1">
+						<div class="tabs__content is-active" data-tabs-content="1">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="none" data-grid--large="wide v--narrow"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
@@ -779,519 +781,519 @@
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-					</div>
+						</div>
 
-					<div class="tabs__content" data-tabs-content="2">
-						<div class="grid" data-grid="none" data-grid--large="wide v--narrow">
-							<div class="grid__item" data-grid="4/12">
-								<div class="demo__item">
+						<div class="tabs__content" data-tabs-content="2">
+							<div class="grid" data-grid="none" data-grid--large="wide v--narrow">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
 								</div>
-							</div>
-							<div class="grid__item" data-grid="4/12">
-								<div class="demo__item">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
 								</div>
-							</div>
-							<div class="grid__item" data-grid="4/12">
-								<div class="demo__item">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
 								</div>
-							</div>
-							<div class="grid__item" data-grid="4/12">
-								<div class="demo__item">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
 								</div>
-							</div>
-							<div class="grid__item" data-grid="4/12">
-								<div class="demo__item">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
 								</div>
-							</div>
-							<div class="grid__item" data-grid="4/12">
-								<div class="demo__item">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
+					</div>
 				</div>
 			</div>
-		</div>
 
-	</section>
+		</section>
 
-	<section class="section" data-demo>
+		<section class="section" data-demo>
 
-		<div class="section__row">
-			<div class="inner">
-				<header class="section__header">
-					<h2>
-						Settings
-					</h2>
-					<p>
-						All settings for this grid are stored in a map called <code>$grid-settings</code>. I recommend to copy the default settings into your scss-file. After that you can configure how you want it.
-					</p>
-				</header>
-			</div>
-		</div>
-
-		<div class="section__row" data-tabs>
-			<header class="section__header">
-				<ul class="tabs__list">
-					<li class="tabs__item">
-						<button class="tabs__button tabs__button--settings is-active" data-tabs-button="1">
-							Settings
-						</button>
-					</li>
-					<li class="tabs__item">
-						<button class="tabs__button tabs__button--defaults" data-tabs-button="2">
-							Defaults
-						</button>
-					</li>
-				</ul>
-			</header>
-
-			<div class="section__code">
+			<div class="section__row">
 				<div class="inner">
+					<header class="section__header">
+						<h2>
+							Settings
+						</h2>
+						<p>
+							All settings for this grid are stored in a map called <code>$grid-settings</code>. I recommend to copy the default settings into your scss-file. After that you can configure how you want it.
+						</p>
+					</header>
+				</div>
+			</div>
 
-					<div class="tabs__content is-active" data-tabs-content="1">
-						<div class="table">
+			<div class="section__row" data-tabs>
+				<header class="section__header">
+					<ul class="tabs__list">
+						<li class="tabs__item">
+							<button class="tabs__button tabs__button--settings is-active" data-tabs-button="1">
+								Settings
+							</button>
+						</li>
+						<li class="tabs__item">
+							<button class="tabs__button tabs__button--defaults" data-tabs-button="2">
+								Defaults
+							</button>
+						</li>
+					</ul>
+				</header>
 
-							<div class="table__header">
-								<div class="table__cell">
-									Name
+				<div class="section__code">
+					<div class="inner">
+
+						<div class="tabs__content is-active" data-tabs-content="1">
+							<div class="table">
+
+								<div class="table__header">
+									<div class="table__cell">
+										Name
+									</div>
+									<div class="table__cell">
+										Type
+									</div>
+									<div class="table__cell">
+										Default
+									</div>
+									<div class="table__cell">
+										Description
+									</div>
 								</div>
-								<div class="table__cell">
-									Type
-								</div>
-								<div class="table__cell">
-									Default
-								</div>
-								<div class="table__cell">
-									Description
-								</div>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											breakpoints
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											map
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											( … )
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											Define your breakpoints you want to use with this grid. Take a look at the <a href="#" data-tabs-button="2">default values</a> for the correct syntax.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											bases
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											list
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											( 12 )
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											Choose how many columns you want to use. For example if you choose <code>(12, 8, 4, 2)</code> you can type <code>11/12</code>, <code>6/8</code>, <code>3/4</code> and <code>1/4</code>. <a href="https://media.giphy.com/media/3oEduOKF6xcG94NaMw/giphy.gif">Mindblowing!</a>
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											gutters
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											map
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											( … )
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											A list of gutter sizes you want to use. Take a look at the <a href="#" data-tabs-button="2">default values</a> for the correct syntax.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											default-gutter
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											number
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											1.25em
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											The default gutter-width. Nothing more.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											gutter-breakpoints
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											boolean
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											true
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											Choose if you need to use different gutters at different breakpoints.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											vertical-gutters
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											boolean
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											true
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											You need different vertical gutters to your horizontal gutters? Set this to <code>true</code>.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											fallback
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											boolean
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											true
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											Gridilydidily comes with <code>inline-block</code> fallback. To use it, you have to use Modernizr for detecting flexbox support. <a href="https://modernizr.com/download/?flexbox-addtest-domprefixes-hasevent-prefixed-prefixes-setclasses-shiv-testallprops-testprop-teststyles">Here's</a> a custom Modernizr build.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											fallback-markup-fix
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											boolean
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											true
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											You need to remove all whitespace between your grid-items for using this fallback correctly. I recommend to minify your HTML-output – otherwise you can set this option to <code>true</code> and this whitespace will be corrected with a CSS (remember it's a hack and isn't working perfectly).
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											grid-modifiers
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											list
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											( … )
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											A list of all grid modifiers you want to use. Modifiers are: <code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>middle</code>, <code>bottom</code>, <code>forwards</code>, <code>backwards</code>, <code>between</code> and <code>around</code>.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											grid-modifier-breakpoints
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											boolean
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											true
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											Choose if you need to use different grid modifiers at different breakpoints.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											item-modifiers
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											list
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											( … )
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											A list of all item modifiers you want to use. Modifiers are: <code>first</code>, <code>last</code>, <code>reset-order</code>, <code>push</code> and <code>pull</code>.
+										</div>
+									</div>
+								</section>
+
+								<section class="table__row">
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Name
+										</h4>
+										<div class="no-wrap">
+											item-modifier-breakpoints
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Type
+										</h4>
+										<div>
+											boolean
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Default
+										</h4>
+										<div>
+											true
+										</div>
+									</div>
+									<div class="table__cell">
+										<h4 class="table__mobile-headline">
+											Description
+										</h4>
+										<div>
+											Choose if you need to use different item modifiers at different breakpoints.
+										</div>
+									</div>
+								</section>
+
 							</div>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										breakpoints
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										map
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										( … )
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										Define your breakpoints you want to use with this grid. Take a look at the <a href="#" data-tabs-button="2">default values</a> for the correct syntax.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										bases
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										list
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										( 12 )
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										Choose how many columns you want to use. For example if you choose <code>(12, 8, 4, 2)</code> you can type <code>11/12</code>, <code>6/8</code>, <code>3/4</code> and <code>1/4</code>. <a href="https://media.giphy.com/media/3oEduOKF6xcG94NaMw/giphy.gif">Mindblowing!</a>
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										gutters
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										map
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										( … )
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										A list of gutter sizes you want to use. Take a look at the <a href="#" data-tabs-button="2">default values</a> for the correct syntax.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										default-gutter
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										number
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										1.25em
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										The default gutter-width. Nothing more.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										gutter-breakpoints
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										boolean
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										true
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										Choose if you need to use different gutters at different breakpoints.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										vertical-gutters
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										boolean
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										true
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										You need different vertical gutters to your horizontal gutters? Set this to <code>true</code>.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										fallback
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										boolean
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										true
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										Gridilydidily comes with <code>inline-block</code> fallback. To use it, you have to use Modernizr for detecting flexbox support. <a href="https://modernizr.com/download/?flexbox-addtest-domprefixes-hasevent-prefixed-prefixes-setclasses-shiv-testallprops-testprop-teststyles">Here's</a> a custom Modernizr build.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										fallback-markup-fix
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										boolean
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										true
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										You need to remove all whitespace between your grid-items for using this fallback correctly. I recommend to minify your HTML-output – otherwise you can set this option to <code>true</code> and this whitespace will be corrected with a CSS (remember it's a hack and isn't working perfectly).
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										grid-modifiers
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										list
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										( … )
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										A list of all grid modifiers you want to use. Modifiers are: <code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>middle</code>, <code>bottom</code>, <code>forwards</code>, <code>backwards</code>, <code>between</code> and <code>around</code>.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										grid-modifier-breakpoints
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										boolean
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										true
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										Choose if you need to use different grid modifiers at different breakpoints.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										item-modifiers
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										list
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										( … )
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										A list of all item modifiers you want to use. Modifiers are: <code>first</code>, <code>last</code>, <code>reset-order</code>, <code>push</code> and <code>pull</code>.
-									</div>
-								</div>
-							</section>
-
-							<section class="table__row">
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Name
-									</h4>
-									<div class="no-wrap">
-										item-modifier-breakpoints
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Type
-									</h4>
-									<div>
-										boolean
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Default
-									</h4>
-									<div>
-										true
-									</div>
-								</div>
-								<div class="table__cell">
-									<h4 class="table__mobile-headline">
-										Description
-									</h4>
-									<div>
-										Choose if you need to use different item modifiers at different breakpoints.
-									</div>
-								</div>
-							</section>
-
 						</div>
-					</div>
 
-					<div class="tabs__content" data-tabs-content="2">
+						<div class="tabs__content" data-tabs-content="2">
 <pre><code class="language-scss">$grid-settings: (
 	breakpoints: (
 		small: 'only screen and (min-width: 400px)',
@@ -1336,18 +1338,31 @@
 );
 </code></pre>
 
+						</div>
 					</div>
 				</div>
 			</div>
+
+		</section>
+
+	</main>
+
+	<footer class="footer">
+
+	</footer>
+
+	<div class="badge">
+		<div class="badge__inner">
+			<span class="badge__row">
+				In Germany
+			</span>
+			<span class="badge__row">
+				we say <em>“geil”</em>.
+			</span>
 		</div>
+	</div>
 
-	</section>
-
-</main>
-
-<footer class="footer">
-
-</footer>
+</div>
 
 <script type="text/javascript" src="assets/js/dest/bundle.js"></script>
 </body>
