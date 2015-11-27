@@ -115,27 +115,6 @@
 
 }
 
-@mixin grid-reverse($modifier: '') {
-
-	$modifier: add-dashes-to-modifier($modifier);
-
-	.grid[data-grid#{$modifier}^='reverse'],
-	.grid[data-grid#{$modifier}*=' reverse'] {
-		flex-direction: row-reverse;
-		flex-wrap: wrap-reverse;
-
-		@if grid-option('fallback') {
-			.no-flexbox & {
-				direction: rtl;
-				> .grid__item {
-					direction: ltr;
-				}
-			}
-		}
-	}
-
-}
-
 @mixin grid-forwards($modifier: '') {
 
 	$modifier: add-dashes-to-modifier($modifier);
@@ -148,6 +127,27 @@
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				direction: ltr;
+			}
+		}
+	}
+
+}
+
+@mixin grid-backwards($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='backwards'],
+	.grid[data-grid#{$modifier}*=' backwards'] {
+		flex-direction: row-reverse;
+		flex-wrap: wrap-reverse;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				direction: rtl;
+				> .grid__item {
+					direction: ltr;
+				}
 			}
 		}
 	}

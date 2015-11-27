@@ -51,14 +51,14 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 	@include grid-bottom();
 }
 
-// create reverse grid-modifier
-@if grid-option-contain('grid-modifiers', 'reverse') {
-	@include grid-reverse();
-}
-
 // create forwards grid-modifier
 @if grid-option-contain('grid-modifiers', 'forwards') {
 	@include grid-forwards();
+}
+
+// create backwards grid-modifier
+@if grid-option-contain('grid-modifiers', 'backwards') {
+	@include grid-backwards();
 }
 
 // create first grid-modifier
@@ -138,14 +138,14 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 			@include grid-bottom($breakpoint-name);
 		}
 
-		// create reverse grid-modifier
-		@if grid-option-contain('grid-modifiers', 'reverse') and grid-option('grid-modifier-breakpoints') {
-			@include grid-reverse($breakpoint-name);
-		}
-
 		// create forwards grid-modifier
 		@if grid-option-contain('grid-modifiers', 'forwards') and grid-option('grid-modifier-breakpoints') {
 			@include grid-forwards($breakpoint-name);
+		}
+
+		// create backwards grid-modifier
+		@if grid-option-contain('grid-modifiers', 'backwards') and grid-option('grid-modifier-breakpoints') {
+			@include grid-backwards($breakpoint-name);
 		}
 
 		// create between grid-modifier
