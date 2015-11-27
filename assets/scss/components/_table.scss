@@ -1,13 +1,13 @@
 .table {
 
-	@include min-width(small) {
+	@include min-width(medium) {
 		display: table;
 		width: 100%;
 	}
 
 	&__header {
 		display: none;
-		@include min-width(small) {
+		@include min-width(medium) {
 			display: table-header-group;
 		}
 	}
@@ -16,7 +16,7 @@
 		padding: 1.25em 0;
 		border-bottom: 3px solid $dark-blue;
 
-		@include min-width(small) {
+		@include min-width(medium) {
 			display: table-row;
 			padding: 0;
 			border: none;
@@ -27,7 +27,7 @@
 
 		margin-bottom: .75em;
 
-		@include min-width(small) {
+		@include min-width(medium) {
 			display: table-cell;
 			padding: 1.25em .8em;
 			margin: 0;
@@ -44,7 +44,7 @@
 
 	}
 
-	@include min-width(small) {
+	@include min-width(medium) {
 		&__row:last-child &__cell {
 			border-bottom: none;
 		}
@@ -58,7 +58,7 @@
 	}
 
 	&__mobile-headline {
-		@include min-width(small) {
+		@include min-width(medium) {
 			display: none;
 		}
 	}
