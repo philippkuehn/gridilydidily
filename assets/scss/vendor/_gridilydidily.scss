@@ -61,16 +61,6 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 	@include grid-backwards();
 }
 
-// create first grid-modifier
-@if grid-option-contain('grid-modifiers', 'first') {
-	@include grid-first();
-}
-
-// create last grid-modifier
-@if grid-option-contain('grid-modifiers', 'last') {
-	@include grid-last();
-}
-
 // create between grid-modifier
 @if grid-option-contain('grid-modifiers', 'between') {
 	@include grid-between();
@@ -81,12 +71,22 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 	@include grid-around();
 }
 
-// create pushes
+// create first item-modifier
+@if grid-option-contain('item-modifiers', 'first') {
+	@include grid-first();
+}
+
+// create last item-modifier
+@if grid-option-contain('item-modifiers', 'last') {
+	@include grid-last();
+}
+
+// create push item-modifier
 @if grid-option-contain('item-modifiers', 'push') {
 	@include grid-push();
 }
 
-// create pulls
+// create pull item-modifier
 @if grid-option-contain('item-modifiers', 'pull') {
 	@include grid-pull();
 }
@@ -168,12 +168,12 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 			@include grid-last($breakpoint-name);
 		}
 
-		// create pushes
+		// create push item-modifier
 		@if grid-option-contain('item-modifiers', 'push') and grid-option('item-modifier-breakpoints') {
 			@include grid-push($breakpoint-name);
 		}
 
-		// create pulls
+		// create pull item-modifier
 		@if grid-option-contain('item-modifiers', 'pull') and grid-option('item-modifier-breakpoints') {
 			@include grid-pull($breakpoint-name);
 		}
