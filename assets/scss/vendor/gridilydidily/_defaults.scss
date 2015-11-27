@@ -23,7 +23,7 @@ $grid-default-settings: (
 	push-breakpoints: true,
 	pull: true,
 	pull-breakpoints: true,
-	modifier: (
+	grid-modifier: (
 		left: true,
 		center: true,
 		right: true,
@@ -37,5 +37,5 @@ $grid-default-settings: (
 		between: true,
 		around: true,
 	),
-	modifier-breakpoints: true,
+	grid-modifier-breakpoints: true,
 );
