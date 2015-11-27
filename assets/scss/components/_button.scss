@@ -2,7 +2,9 @@
 
 	display: inline-block;
 	line-height: 1;
-	padding: 1em;
+	padding: .8em 1.5em;
+	margin-bottom: 1em;
+	font-size: .75em;
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
@@ -13,17 +15,32 @@
 	color: $key;
 	cursor: pointer;
 
-	&:hover {
+	& + & {
+		margin-left: .5em;
+	}
+
+	&:hover,
+	&.is-active {
 		color: $dark-blue;
 		border: 3px solid $key;
 		background: $key;
 	}
 
-	@include min-width(small) {
-		min-width: 10em;
+	&--large {
+		font-size: 1em;
+		padding: 1em 1.5em;
+		border: 3px solid currentColor;
 	}
 
 	&--split {
+
+		@include min-width(small) {
+			min-width: 10em;
+		}
+
+		& + & {
+			margin: 0;
+		}
 
 		&:first-child {
 			border-top-right-radius: 0;

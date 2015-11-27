@@ -25,9 +25,9 @@
 				A highly configurable & data-attribute driven flexbox grid with inline-block fallback.
 			</h3>
 			<div class="header__buttons">
-				<a class="button button--split button--key" href="//github.com/philippkuehn/gridilydidily/">
+				<a class="button button--large button--split button--key" href="//github.com/philippkuehn/gridilydidily/">
 					Github
-				</a><a class="button button--split button--key" href="//github.com/philippkuehn/gridilydidily/archive/master.zip" download>
+				</a><a class="button button--large button--split button--key" href="//github.com/philippkuehn/gridilydidily/archive/master.zip" download>
 					Download
 				</a>
 			</div>
@@ -148,36 +148,35 @@
 	</section>
 
 
-	<section class="section">
+	<section class="section" data-demo>
 
 		<div class="section__row">
 			<div class="inner">
 				<header class="section__header">
 					<h2>
-						Grid Modifier
+						Grid Modifiers
 					</h2>
 					<p>
-						Gridilydididly has a lot of grid modifier. Some of them are flexbox-only but it's only a matter of time before we can drop support for old IE. Until then Gridilydidily has inline-block fallback.
+						Gridilydididly has a lot of grid modifiers. Some of them are flexbox-only but it's only a matter of time before we can drop support for old IE. Until then Gridilydidily has inline-block fallback.
 					</p>
-					<div class="select__wrapper">
-						<select data-demo-select>
-							<option value="left">left</option>
-							<option value="center" selected>center</option>
-							<option value="right">right</option>
-							<option value="top">top</option>
-							<option value="middle">middle</option>
-							<option value="bottom">bottom</option>
-							<option value="forwards">forwards</option>
-							<option value="reverse">reverse</option>
-							<option value="between">between</option>
-							<option value="around">around</option>
-						</select>
-					</div>
 				</header>
 			</div>
 		</div>
 
-
+		<div class="section__row">
+			<div class="section__header">
+				<button class="button" data-demo-button="left">left</button>
+				<button class="button is-active" data-demo-button="center">center</button>
+				<button class="button" data-demo-button="right">right</button>
+				<button class="button" data-demo-button="top">top</button>
+				<button class="button" data-demo-button="middle">middle</button>
+				<button class="button" data-demo-button="bottom">bottom</button>
+				<button class="button" data-demo-button="forwards">forwards</button>
+				<button class="button" data-demo-button="reverse">reverse</button>
+				<button class="button" data-demo-button="between">between</button>
+				<button class="button" data-demo-button="around">around</button>
+			</div>
+		</div>
 
 		<div class="section__row" data-tabs>
 			<header class="section__header">
@@ -291,7 +290,6 @@
 						</div>
 
 					</div>
-
 
 					<div class="tabs__content" data-tabs-content="2">
 
@@ -477,14 +475,18 @@
 			</div>
 		</div>
 
+	</section>
+
+	<section class="section">
+
 		<div class="section__row">
 			<div class="inner">
 				<header class="section__header">
 					<h3>
-						Multiple modifier
+						Multiple modifiers
 					</h3>
 					<p>
-						You can use multiple modifier at the same time! It's dead simple – just seperate them with a space.
+						You can use multiple modifiers at the same time! It's dead simple – just seperate them with a space.
 					</p>
 				</header>
 			</div>
@@ -502,6 +504,10 @@
 				</div>
 			</div>
 		</div>
+
+	</section>
+
+	<section class="section">
 
 		<div class="section__row">
 			<div class="inner">
@@ -531,26 +537,27 @@
 
 	</section>
 
-	<section class="section">
+	<section class="section" data-demo>
 
 		<div class="section__row">
 			<div class="inner">
 				<header class="section__header">
 					<h2>
-						Grid-item Modifier
+						Item Modifiers
 					</h2>
 					<p>
-						blub
+						Each grid-item can also have additional modifiers for sorting, pushing and pulling.
 					</p>
-					<div class="select__wrapper">
-						<select data-demo-select>
-							<option value="first" selected>first</option>
-							<option value="last">last</option>
-							<option value="push">push</option>
-							<option value="pull">pull</option>
-						</select>
-					</div>
 				</header>
+			</div>
+		</div>
+
+		<div class="section__row">
+			<div class="section__header">
+				<button class="button is-active" data-demo-button="first">first</button>
+				<button class="button" data-demo-button="last">last</button>
+				<button class="button" data-demo-button="push">push</button>
+				<button class="button" data-demo-button="pull">pull</button>
 			</div>
 		</div>
 

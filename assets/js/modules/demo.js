@@ -8,18 +8,31 @@ var Demo = (function() {
 
 	var init = function() {
 
-		$('[data-demo-select]').chosen({
-			width: '100%',
-			disable_search: true
-		}).change(function() {
-			var $this = $(this),
-					value = $this.val();
+		$('[data-demo]').each(function() {
 
-			$('[data-grid-modifier]')
-				.removeClass('is-active');
+			$(this).on('click', '[data-demo-button]', function() {
 
-			$('[data-grid-modifier="' + value + '"]')
-				.addClass('is-active');
+				var $button = $(this),
+						$demo = $button.closest('[data-demo]'),
+						value = $button.attr('data-demo-button');
+
+				$demo
+					.find('[data-demo-button]')
+					.removeClass('is-active');
+
+				$button
+					.addClass('is-active');
+
+				$demo
+					.find('[data-grid-modifier]')
+					.removeClass('is-active');
+
+				$demo
+					.find('[data-grid-modifier="' + value + '"]')
+					.addClass('is-active');
+
+			});
+
 		});
 
 	};
