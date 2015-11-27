@@ -20,7 +20,7 @@ var Tabs = (function() {
 				$container.find('[data-tabs-button]')
 					.removeClass('is-active');
 
-				$this
+				$container.find('[data-tabs-button="' + id + '"]')
 					.addClass('is-active');
 
 				$container.find('[data-tabs-content]')

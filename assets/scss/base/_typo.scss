@@ -59,8 +59,26 @@ h4 {
 a {
 	color: currentColor;
 	text-decoration: none;
+
+	&:not([class]) {
+		color: $key;
+		border-bottom: 1px solid currentColor;
+	}
 }
 
 p {
 	margin-bottom: 1.75em;
+}
+
+code:not([class]) {
+	font-size: .9em;
+	background: $very-dark-blue;
+	padding: .1em .5em .2em .5em;
+	border-radius: 2em;
+	color: $key;
+	font-family: 'Source Code Pro', monospace;
+
+	.section__code & {
+		background: rgba(0, 0, 0, .2);
+	}
 }

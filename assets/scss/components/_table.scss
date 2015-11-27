@@ -1,0 +1,40 @@
+.table {
+
+	display: table;
+	width: 100%;
+
+	&__header {
+		display: table-header-group;
+	}
+
+	&__row {
+		display: table-row;
+	}
+
+	&__cell {
+		display: table-cell;
+		padding: 1.25em .8em;
+		border-bottom: 3px solid $dark-blue;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+
+	}
+
+	&__row:last-child &__cell {
+		border-bottom: none;
+	}
+
+	&__header &__cell {
+		border-bottom: 3px solid $light-grey;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+	}
+
+}

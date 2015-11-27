@@ -740,7 +740,174 @@
 				<div class="inner">
 
 					<div class="tabs__content is-active" data-tabs-content="1">
-						settings
+						<div class="table">
+
+							<div class="table__header">
+								<div class="table__cell">
+									Name
+								</div>
+								<div class="table__cell">
+									Type
+								</div>
+								<div class="table__cell">
+									Default
+								</div>
+								<div class="table__cell">
+									Description
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									breakpoints
+								</div>
+								<div class="table__cell">
+									map
+								</div>
+								<div class="table__cell">
+									( … )
+								</div>
+								<div class="table__cell">
+									Define your breakpoints you want to use with this grid. Take a look at the <a href="#" data-tabs-button="2">default values</a> for the correct syntax.
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									bases
+								</div>
+								<div class="table__cell">
+									map
+								</div>
+								<div class="table__cell">
+									( 12 )
+								</div>
+								<div class="table__cell">
+									Choose how many columns you want to use. For example if you choose <code>(12, 8, 4, 2)</code> you can type <code>11/12</code>, <code>6/8</code>, <code>3/4</code> and <code>1/4</code>. <a href="https://media.giphy.com/media/3oEduOKF6xcG94NaMw/giphy.gif">Mindblowing!</a>
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									gutters
+								</div>
+								<div class="table__cell">
+									map
+								</div>
+								<div class="table__cell">
+									( … )
+								</div>
+								<div class="table__cell">
+									A list of gutter sizes you want to use. Take a look at the <a href="#" data-tabs-button="2">default values</a> for the correct syntax.
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									default-gutter
+								</div>
+								<div class="table__cell">
+									number
+								</div>
+								<div class="table__cell">
+									1.25em
+								</div>
+								<div class="table__cell">
+									The default gutter-width. Nothing more.
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									gutter-breakpoints
+								</div>
+								<div class="table__cell">
+									boolean
+								</div>
+								<div class="table__cell">
+									true
+								</div>
+								<div class="table__cell">
+									Choose if you need to use different gutters at different breakpoints.
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									vertical-gutters
+								</div>
+								<div class="table__cell">
+									boolean
+								</div>
+								<div class="table__cell">
+									true
+								</div>
+								<div class="table__cell">
+									You need different vertical gutters to your horizontal gutters? Set this to <code>true</code>.
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									fallback
+								</div>
+								<div class="table__cell">
+									boolean
+								</div>
+								<div class="table__cell">
+									true
+								</div>
+								<div class="table__cell">
+									Gridilydidily comes with <code>inline-block</code> fallback. To use it, you have to use Modernizr for detecting flexbox support. <a href="https://modernizr.com/download/?flexbox-addtest-domprefixes-hasevent-prefixed-prefixes-setclasses-shiv-testallprops-testprop-teststyles">Here's</a> a custom Modernizr build.
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									fallback-markup-fix
+								</div>
+								<div class="table__cell">
+									boolean
+								</div>
+								<div class="table__cell">
+									true
+								</div>
+								<div class="table__cell">
+									You need to remove all whitespace between your grid-items for using this fallback correctly. I recommend to minify your HTML-output – otherwise you can set this option to <code>true</code> and this whitespace will be corrected with a CSS (remember it's a hack and isn't working perfectly).
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									modifier
+								</div>
+								<div class="table__cell">
+									map
+								</div>
+								<div class="table__cell">
+									( … )
+								</div>
+								<div class="table__cell">
+									A list of all grid modifiers you want to use.
+								</div>
+							</div>
+
+							<div class="table__row">
+								<div class="table__cell">
+									modifier-breakpoints
+								</div>
+								<div class="table__cell">
+									boolean
+								</div>
+								<div class="table__cell">
+									true
+								</div>
+								<div class="table__cell">
+									Choose if you need to use different grid modifiers at different breakpoints.
+								</div>
+							</div>
+
+						</div>
 					</div>
 
 					<div class="tabs__content" data-tabs-content="2">
