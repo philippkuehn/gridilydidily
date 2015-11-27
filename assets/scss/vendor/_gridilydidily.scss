@@ -82,6 +82,11 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 	@include grid-last();
 }
 
+// create reset-order item-modifier
+@if grid-option-contain('item-modifiers', 'reset-order') {
+	@include grid-reset-order();
+}
+
 // create push item-modifier
 @if grid-option-contain('item-modifiers', 'push') {
 	@include grid-push();
@@ -167,6 +172,11 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 		// create last grid-modifier
 		@if grid-option-contain('item-modifiers', 'last') and grid-option('item-modifier-breakpoints') {
 			@include grid-last($breakpoint-name);
+		}
+
+		// create reset-order grid-modifier
+		@if grid-option-contain('item-modifiers', 'reset-order') and grid-option('item-modifier-breakpoints') {
+			@include grid-reset-order($breakpoint-name);
 		}
 
 		// create push item-modifier

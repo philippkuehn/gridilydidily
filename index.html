@@ -556,6 +556,7 @@
 			<div class="section__header">
 				<button class="button is-active" data-demo-button="first">first</button>
 				<button class="button" data-demo-button="last">last</button>
+				<button class="button" data-demo-button="reset-order">reset-order</button>
 				<button class="button" data-demo-button="push">push</button>
 				<button class="button" data-demo-button="pull">pull</button>
 			</div>
@@ -595,6 +596,15 @@
 <pre><code class="language-markup">&lt;div class="grid"&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12 last"&gt; 2 &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="reset-order">
+<pre><code class="language-markup">&lt;div class="grid"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; 1 &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12 reset-order"&gt; 2 &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; 3 &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -650,6 +660,26 @@
 									</div>
 								</div>
 								<div class="grid__item" data-grid="4/12 last">
+									<div class="demo__item">
+										2
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										3
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="demo__grid-modifier" data-grid-modifier="reset-order">
+							<div class="grid">
+								<div class="grid__item" data-grid="4/12">
+									<div class="demo__item">
+										1
+									</div>
+								</div>
+								<div class="grid__item" data-grid="4/12 reset-order">
 									<div class="demo__item">
 										2
 									</div>
@@ -1137,7 +1167,7 @@
 										Description
 									</h4>
 									<div>
-										A list of all item modifiers you want to use. Modifiers are: <code>first</code>, <code>last</code>, <code>push</code> and <code>pull</code>.
+										A list of all item modifiers you want to use. Modifiers are: <code>first</code>, <code>last</code>, <code>reset-order</code>, <code>push</code> and <code>pull</code>.
 									</div>
 								</div>
 							</section>
@@ -1217,6 +1247,7 @@
 	item-modifiers: (
 		first,
 		last,
+		reset-order,
 		push,
 		pull,
 	),

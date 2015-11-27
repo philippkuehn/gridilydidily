@@ -20,6 +20,17 @@
 
 }
 
+@mixin grid-reset-order($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid__item[data-grid#{$modifier}^='reset-order'],
+	.grid__item[data-grid#{$modifier}*=' reset-order'] {
+		order: initial;
+	}
+
+}
+
 @mixin grid-push($modifier: '') {
 
 	$modifier: add-dashes-to-modifier($modifier);
