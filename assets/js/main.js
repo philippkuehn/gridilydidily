@@ -1,10 +1,5 @@
 jQuery(document).ready(function($) {
 
-	// viewportunit polyfill
-	viewportUnitsBuggyfill.init({
-		hacks: window.viewportUnitsBuggyfillHacks
-	});
-
 	// global vars
 	$doc = $(document),
 	$win = $(window),
