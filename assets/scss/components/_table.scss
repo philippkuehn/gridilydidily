@@ -5,13 +5,6 @@
 		width: 100%;
 	}
 
-	&__header {
-		display: none;
-		@include min-width(medium) {
-			display: table-header-group;
-		}
-	}
-
 	&__row {
 		padding: 1.25em 0;
 		border-bottom: 3px solid $dark-blue;
@@ -32,6 +25,11 @@
 			padding: 1.25em .8em;
 			margin: 0;
 			border-bottom: 3px solid $dark-blue;
+
+			&:nth-child(2),
+			&:nth-child(3) {
+				color: $medium-grey;
+			}
 
 			&:first-child {
 				padding-left: 0;
@@ -55,6 +53,17 @@
 			text-transform: uppercase;
 			letter-spacing: .1em;
 		}
+	}
+
+	&__header {
+		display: none;
+		@include min-width(medium) {
+			display: table-header-group;
+		}
+	}
+
+	&__header &__cell {
+		color: inherit;
 	}
 
 	&__mobile-headline {
