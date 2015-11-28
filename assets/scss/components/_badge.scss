@@ -2,15 +2,24 @@
 
 	$badge-size: 10em;
 
-	position: fixed;
+	position: absolute;
 	width: $badge-size;
 	height: $badge-size;
-	font-size: .9em;
+	font-size: .85em;
+	font-weight: 700;
+	line-height: 1.3;
+	text-transform: uppercase;
+	letter-spacing: .05em;
 	top: 0;
 	right: 0;
 	z-index: 100;
 	text-align: center;
 	white-space: nowrap;
+	pointer-events: none;
+
+	@include min-width(small) {
+		position: fixed;
+	}
 
 	&__inner {
 		position: relative;
