@@ -6,10 +6,15 @@
 	.grid[data-grid#{$modifier}*=' left'] {
 		justify-content: flex-start;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				text-align: left;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -26,10 +31,15 @@
 	.grid[data-grid#{$modifier}*=' center'] {
 		justify-content: center;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				text-align: center;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -46,10 +56,15 @@
 	.grid[data-grid#{$modifier}*=' right'] {
 		justify-content: flex-end;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				text-align: right;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -66,9 +81,14 @@
 	.grid[data-grid#{$modifier}*=' top'] {
 		align-items: flex-start;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				> .grid__item {
+					display: inline-block;
 					vertical-align: top;
 				}
 			}
@@ -85,9 +105,14 @@
 	.grid[data-grid#{$modifier}*=' middle'] {
 		align-items: center;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				> .grid__item {
+					display: inline-block;
 					vertical-align: middle;
 				}
 			}
@@ -104,9 +129,14 @@
 	.grid[data-grid#{$modifier}*='bottom'] {
 		align-items: flex-end;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				> .grid__item {
+					display: inline-block;
 					vertical-align: bottom;
 				}
 			}
@@ -124,9 +154,16 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				direction: ltr;
+				> .grid__item {
+					display: inline-block;
+				}
 			}
 		}
 	}
@@ -142,10 +179,15 @@
 		flex-direction: row-reverse;
 		flex-wrap: wrap-reverse;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				direction: rtl;
 				> .grid__item {
+					display: inline-block;
 					direction: ltr;
 				}
 			}
@@ -162,10 +204,15 @@
 	.grid[data-grid#{$modifier}*=' between'] {
 		justify-content: space-between;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				text-align: center;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -182,11 +229,39 @@
 	.grid[data-grid#{$modifier}*=' around'] {
 		justify-content: space-around;
 
+		> .grid__item {
+			display: block;
+		}
+
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				text-align: center;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
+				}
+			}
+		}
+	}
+
+}
+
+@mixin grid-equal($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid[data-grid#{$modifier}^='equal'],
+	.grid[data-grid#{$modifier}*=' equal'] {
+		align-items: stretch;
+
+		> .grid__item {
+			display: flex;
+		}
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				> .grid__item {
+					display: inline-block;
 				}
 			}
 		}
