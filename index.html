@@ -177,6 +177,7 @@
 					<button class="button" data-demo-button="backwards">backwards</button>
 					<button class="button" data-demo-button="between">between</button>
 					<button class="button" data-demo-button="around">around</button>
+					<button class="button" data-demo-button="equal">equal</button>
 				</div>
 			</div>
 
@@ -287,6 +288,15 @@
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="3/12"&gt; … &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="equal">
+<pre><code class="language-markup">&lt;div class="grid" data-grid="equal"&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 							</div>
@@ -465,6 +475,26 @@
 										</div>
 									</div>
 									<div class="grid__item" data-grid="3/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="equal">
+								<div class="grid" data-grid="equal">
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item demo__item">
+											Row
+											<br />
+											…
+										</div>
+									</div>
+									<div class="grid__item" data-grid="4/12">
 										<div class="demo__item">
 										</div>
 									</div>
@@ -1180,7 +1210,7 @@
 											Description
 										</h4>
 										<div>
-											A list of all grid modifiers you want to use. Modifiers are: <code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>middle</code>, <code>bottom</code>, <code>forwards</code>, <code>backwards</code>, <code>between</code> and <code>around</code>.
+											A list of all grid modifiers you want to use. Modifiers are: <code>left</code>, <code>center</code>, <code>right</code>, <code>top</code>, <code>middle</code>, <code>bottom</code>, <code>forwards</code>, <code>backwards</code>, <code>between</code>, <code>around</code> and <code>equal</code>.
 										</div>
 									</div>
 								</section>
@@ -1325,6 +1355,7 @@
 		backwards,
 		between,
 		around,
+		equal,
 	),
 	grid-modifier-breakpoints: true,
 	item-modifiers: (

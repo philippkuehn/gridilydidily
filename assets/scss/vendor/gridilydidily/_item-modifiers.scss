@@ -26,7 +26,7 @@
 
 	.grid__item[data-grid#{$modifier}^='reset-order'],
 	.grid__item[data-grid#{$modifier}*=' reset-order'] {
-		order: initial;
+		order: 0;
 	}
 
 }
