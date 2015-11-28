@@ -4,6 +4,10 @@
 	padding: 3em 0;
 	text-align: center;
 
+	@include min-width(medium) {
+		min-height: 85vh;
+	}
+
 	&__headline {
 
 	}
