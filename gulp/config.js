@@ -37,9 +37,9 @@ module.exports = {
 			'**/*.html',
 			'**/*.php',
 			'**/*.{jpg,jpeg,png,gif}',
-			'**/style.css',
-			'**/bundle.js',
-			'**/libs.js'
+			'**/style.min.css',
+			'**/bundle.min.js',
+			'**/libs.min.js'
 		]
 	}
 };
