@@ -14,6 +14,7 @@
 			.no-flexbox & {
 				text-align: left;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -38,6 +39,7 @@
 			.no-flexbox & {
 				text-align: center;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -62,6 +64,7 @@
 			.no-flexbox & {
 				text-align: right;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -85,6 +88,7 @@
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				> .grid__item {
+					display: inline-block;
 					vertical-align: top;
 				}
 			}
@@ -108,6 +112,7 @@
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				> .grid__item {
+					display: inline-block;
 					vertical-align: middle;
 				}
 			}
@@ -131,6 +136,7 @@
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				> .grid__item {
+					display: inline-block;
 					vertical-align: bottom;
 				}
 			}
@@ -155,6 +161,9 @@
 		@if grid-option('fallback') {
 			.no-flexbox & {
 				direction: ltr;
+				> .grid__item {
+					display: inline-block;
+				}
 			}
 		}
 	}
@@ -178,6 +187,7 @@
 			.no-flexbox & {
 				direction: rtl;
 				> .grid__item {
+					display: inline-block;
 					direction: ltr;
 				}
 			}
@@ -202,6 +212,7 @@
 			.no-flexbox & {
 				text-align: center;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -226,6 +237,7 @@
 			.no-flexbox & {
 				text-align: center;
 				> .grid__item {
+					display: inline-block;
 					text-align: left;
 				}
 			}
@@ -244,6 +256,14 @@
 
 		> .grid__item {
 			display: flex;
+		}
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				> .grid__item {
+					display: inline-block;
+				}
+			}
 		}
 	}
 
