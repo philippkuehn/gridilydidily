@@ -23,6 +23,8 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+
+	-webkit-overflow-scrolling: touch;
 }
 
 /* Code blocks */
