@@ -23,13 +23,16 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
-
-	-webkit-overflow-scrolling: touch;
 }
 
 /* Code blocks */
 pre[class*="language-"] {
-	overflow: auto;
+	position: relative;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	margin: 0 -2em;
+	padding: 0 2em;
 }
 
 pre[class*="language-"]::selection {
