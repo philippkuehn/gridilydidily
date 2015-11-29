@@ -67,6 +67,7 @@
 	}
 
 	&__mobile-headline {
+		margin-bottom: .1em;
 		@include min-width(medium) {
 			display: none;
 		}
