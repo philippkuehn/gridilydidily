@@ -9,7 +9,9 @@ module.exports = function (gulp, config, plugins) {
 	gulp.task('sass:minify', function() {
 		return gulp.src(config.base + config.scss.dest + config.scss.destFile)
 		.pipe(plugins.plumber({errorHandler: config.onError}))
-		.pipe(plugins.cssmin())
+		.pipe(plugins.cssmin({
+			restructuring: false
+		}))
 		.pipe(plugins.rename({suffix: '.min'}))
 		.pipe(plugins.size({
 			'showFiles': true,
