@@ -34,7 +34,7 @@
 					</a>
 				</div>
 				<div class="header__version">
-					v2.0.0
+					v2.1.0
 				</div>
 			</div>
 		</div>
@@ -294,9 +294,15 @@
 
 							<div class="demo__grid-modifier" data-grid-modifier="equal">
 <pre><code class="language-markup">&lt;div class="grid" data-grid="equal"&gt;
-	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
-	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
-	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		&lt;div class="grid__fill"&gt; … &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		&lt;div class="grid__fill"&gt; … &lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="grid__item" data-grid="4/12"&gt;
+		&lt;div class="grid__fill"&gt; … &lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 							</div>
@@ -484,18 +490,18 @@
 							<div class="demo__grid-modifier" data-grid-modifier="equal">
 								<div class="grid" data-grid="equal">
 									<div class="grid__item" data-grid="4/12">
-										<div class="demo__item">
+										<div class="demo__item grid__fill">
 										</div>
 									</div>
 									<div class="grid__item" data-grid="4/12">
-										<div class="demo__item demo__item">
+										<div class="demo__item grid__fill">
 											Row
 											<br />
 											…
 										</div>
 									</div>
 									<div class="grid__item" data-grid="4/12">
-										<div class="demo__item">
+										<div class="demo__item grid__fill">
 										</div>
 									</div>
 								</div>
