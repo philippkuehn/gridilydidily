@@ -34,7 +34,7 @@
 					</a>
 				</div>
 				<div class="header__version">
-					v2.1.0
+					v2.2.0
 				</div>
 			</div>
 		</div>
@@ -597,6 +597,7 @@
 					<button class="button" data-demo-button="reset-order">reset-order</button>
 					<button class="button" data-demo-button="push">push</button>
 					<button class="button" data-demo-button="pull">pull</button>
+					<button class="button" data-demo-button="auto">auto</button>
 				</div>
 			</div>
 
@@ -662,6 +663,17 @@
 	&lt;div class="grid__item" data-grid="3/12 pull--1/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
 	&lt;div class="grid__item" data-grid="4/12"&gt; … &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="auto">
+<pre><code class="language-markup">&lt;div class="grid"&gt;
+	&lt;div class="grid__item" data-grid="auto"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="auto"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="auto"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="auto"&gt; … &lt;/div&gt;
+	&lt;div class="grid__item" data-grid="auto"&gt; … &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 							</div>
@@ -760,6 +772,31 @@
 										</div>
 									</div>
 									<div class="grid__item" data-grid="4/12">
+										<div class="demo__item">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="demo__grid-modifier" data-grid-modifier="auto">
+								<div class="grid">
+									<div class="grid__item" data-grid="auto">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="auto">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="auto">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="auto">
+										<div class="demo__item">
+										</div>
+									</div>
+									<div class="grid__item" data-grid="auto">
 										<div class="demo__item">
 										</div>
 									</div>
@@ -1443,6 +1480,7 @@
 		reset-order,
 		push,
 		pull,
+		auto,
 	),
 	item-modifier-breakpoints: true,
 );

@@ -70,3 +70,22 @@
 	}
 
 }
+
+@mixin grid-auto($modifier: '') {
+
+	$modifier: add-dashes-to-modifier($modifier);
+
+	.grid__item[data-grid#{$modifier}^='auto'],
+	.grid__item[data-grid#{$modifier}*=' auto'] {
+		flex-grow: 1;
+		flex-basis: 0;
+		max-width: 100%;
+
+		@if grid-option('fallback') {
+			.no-flexbox & {
+				width: auto;
+			}
+		}
+	}
+
+}
