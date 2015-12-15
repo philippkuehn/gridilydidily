@@ -65,6 +65,7 @@
 		@for $counter from 1 through $grid-base {
 			.grid__item[data-grid#{$modifier}^='#{$counter}/#{$grid-base}'],
 			.grid__item[data-grid#{$modifier}*=' #{$counter}/#{$grid-base}'] {
+				flex-grow: 0;
 				flex-basis: $counter / $grid-base * 100%;
 				max-width: $counter / $grid-base * 100%;
 
