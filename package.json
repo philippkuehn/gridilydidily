@@ -1,6 +1,6 @@
 {
-  "name": "@philippkuehn/gridilydidily",
-  "version": "3.0.0",
+  "name": "gridilydidily",
+  "version": "3.0.1",
   "description": "A highly configurable, data-attribute driven and sass based flexbox grid with inline-block fallback.",
   "main": "gridilydidily.scss",
   "dependencies": {},
