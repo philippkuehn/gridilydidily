@@ -28,10 +28,10 @@
 
 }
 
-@function add-dashes-to-modifier($modifier: '') {
+@function add-at-to-modifier($modifier: '') {
 
 	@if $modifier != '' {
-		$modifier: '--#{$modifier}';
+		$modifier: '\\@#{$modifier}';
 	}
 	@return $modifier;
 

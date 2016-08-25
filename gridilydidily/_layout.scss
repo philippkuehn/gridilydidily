@@ -43,23 +43,13 @@
 			}
 		}
 
-		&__fill {
-			display: flex;
-			flex-direction: column;
-			flex-grow: 1;
-			// IE10-11 bugfix
-			> img {
-				flex-shrink: 0;
-			}
-		}
-
 	}
 
 }
 
 @mixin grid-width($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	@each $grid-base in grid-option('bases') {
 		@for $counter from 1 through $grid-base {
@@ -82,7 +72,7 @@
 
 @mixin grid-gutter($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	@each $name, $width in grid-option('gutters') {
 		.grid[data-grid#{$modifier}^='#{$name}'],
@@ -98,7 +88,7 @@
 
 @mixin grid-vertical-gutter($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	@each $name, $width in grid-option('gutters') {
 		.grid[data-grid#{$modifier}^='v--#{$name}'],

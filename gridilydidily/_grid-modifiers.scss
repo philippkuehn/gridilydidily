@@ -1,6 +1,6 @@
 @mixin grid-left($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='left'],
 	.grid[data-grid#{$modifier}*=' left'] {
@@ -25,7 +25,7 @@
 
 @mixin grid-center($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='center'],
 	.grid[data-grid#{$modifier}*=' center'] {
@@ -50,7 +50,7 @@
 
 @mixin grid-right($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='right'],
 	.grid[data-grid#{$modifier}*=' right'] {
@@ -75,7 +75,7 @@
 
 @mixin grid-top($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='top'],
 	.grid[data-grid#{$modifier}*=' top'] {
@@ -99,7 +99,7 @@
 
 @mixin grid-middle($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='middle'],
 	.grid[data-grid#{$modifier}*=' middle'] {
@@ -123,7 +123,7 @@
 
 @mixin grid-bottom($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='bottom'],
 	.grid[data-grid#{$modifier}*='bottom'] {
@@ -147,7 +147,7 @@
 
 @mixin grid-forwards($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='forwards'],
 	.grid[data-grid#{$modifier}*=' forwards'] {
@@ -172,7 +172,7 @@
 
 @mixin grid-backwards($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='backwards'],
 	.grid[data-grid#{$modifier}*=' backwards'] {
@@ -198,7 +198,7 @@
 
 @mixin grid-between($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='between'],
 	.grid[data-grid#{$modifier}*=' between'] {
@@ -223,7 +223,7 @@
 
 @mixin grid-around($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='around'],
 	.grid[data-grid#{$modifier}*=' around'] {
@@ -248,7 +248,7 @@
 
 @mixin grid-equal($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid[data-grid#{$modifier}^='equal'],
 	.grid[data-grid#{$modifier}*=' equal'] {

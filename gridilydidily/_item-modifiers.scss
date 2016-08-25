@@ -1,6 +1,6 @@
 @mixin grid-first($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid__item[data-grid#{$modifier}^='first'],
 	.grid__item[data-grid#{$modifier}*=' first'] {
@@ -11,7 +11,7 @@
 
 @mixin grid-last($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid__item[data-grid#{$modifier}^='last'],
 	.grid__item[data-grid#{$modifier}*=' last'] {
@@ -22,7 +22,7 @@
 
 @mixin grid-reset-order($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid__item[data-grid#{$modifier}^='reset-order'],
 	.grid__item[data-grid#{$modifier}*=' reset-order'] {
@@ -33,7 +33,7 @@
 
 @mixin grid-push($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	@each $grid-base in grid-option('bases') {
 		@for $counter from 1 through $grid-base {
@@ -53,7 +53,7 @@
 
 @mixin grid-pull($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	@each $grid-base in grid-option('bases') {
 		@for $counter from 1 through $grid-base {
@@ -73,7 +73,7 @@
 
 @mixin grid-auto($modifier: '') {
 
-	$modifier: add-dashes-to-modifier($modifier);
+	$modifier: add-at-to-modifier($modifier);
 
 	.grid__item[data-grid#{$modifier}^='auto'],
 	.grid__item[data-grid#{$modifier}*=' auto'] {
@@ -85,6 +85,24 @@
 			.no-flexbox & {
 				width: auto;
 			}
+		}
+	}
+
+}
+
+@mixin grid-fill($modifier: '') {
+
+	$modifier: add-at-to-modifier($modifier);
+
+	[data-grid#{$modifier}^='fill'],
+	[data-grid#{$modifier}*=' fill'] {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		flex-shrink: 0;
+		// IE10-11 bugfix
+		> img {
+			flex-shrink: 0;
 		}
 	}
 

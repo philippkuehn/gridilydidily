@@ -1,4 +1,4 @@
-// Gridilydidily v2.2.0
+// Gridilydidily v3.0.0
 // http://philippkuehn.github.io/gridilydidily/
 
 @import "gridilydidily/defaults";
@@ -110,6 +110,11 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 	@include grid-auto();
 }
 
+// create fill item-modifier
+@if grid-option-contain('item-modifiers', 'fill') {
+	@include grid-fill();
+}
+
 // create stuff based on breakpoints
 @each $breakpoint-name, $breakpoint-condition in grid-option('breakpoints') {
 	@media #{$breakpoint-condition} {
@@ -210,6 +215,11 @@ $grid-settings: map-merge($grid-default-settings, $grid-settings);
 		// create auto item-modifier
 		@if grid-option-contain('item-modifiers', 'auto') and grid-option('item-modifier-breakpoints') {
 			@include grid-auto($breakpoint-name);
+		}
+
+		// create fill item-modifier
+		@if grid-option-contain('item-modifiers', 'fill') and grid-option('item-modifier-breakpoints') {
+			@include grid-fill($breakpoint-name);
 		}
 
 	}
